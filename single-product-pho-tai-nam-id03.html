@@ -1,0 +1,1254 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Canteen FireTech - Phở tái nạm</title>
+    <!-- Standard Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href="css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="css/bundle.css">
+    <link rel="stylesheet" href="css/css_giaodien/single-product.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header trên-->
+        <div class="full-layer-outer-header d-none d-lg-block">
+            <div class="container clearfix ">
+                <div class="d-lg-block">
+                    <nav>
+                        <ul class="primary-nav g-nav ">
+                            <li>
+                                <a href="tel:+84-444-898-222">
+                                    <i class="fas fa-phone u-c-brand u-s-m-r-9"></i>
+                                    Telephone: +84 444 989 222
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:firetech@ueh.edu.vn">
+                                    <i class="fas fa-envelope u-c-brand u-s-m-r-9"></i>
+                                    E-mail: firetech@ueh.edu.vn
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav>
+                    <ul class="secondary-nav g-nav">
+                        <li>
+                            <a>
+                                Tài khoản
+                                <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                            </a>
+
+                            <ul class="g-dropdown" style="width:200px">
+                                <li>
+                                    <a href="hoso.html">
+                                        <i class="fas fa-cog u-s-m-r-9"></i>
+                                        Hồ sơ của tôi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="far fa-heart u-s-m-r-9"></i>
+                                        Đăng nhập
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="signin.html">
+                                        <i class="fas fa-sign-in-alt u-s-m-r-9"></i>
+                                        Đăng ký
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Header trên/- -->
+        <!--Header giữa -->
+        <div class="full-layer-mid-header">
+            <div class="container">
+                <div class="row clearfix align-items-center">
+                    <!--Logo-->
+                    <div class="col-lg-3 col-md-5 col-sm-5">
+                        <div class="brand-logo text-lg-center">
+                            <a href="home.html">
+                                <img src="images/main-logo/Logo_CanTeen.png" alt="Fire Tech Logo" class="app-brand-logo"
+                                     width="189" height="63">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Thanh tìm kiếm - DONE-->
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <form class="form-searchbox text-center">
+                            <label class="sr-only" for="search-landscape">Search</label>
+                            <input id="search-landscape" type="text" class="text-field" placeholder="Tìm món ăn">
+                            <div class="select-box-position">
+                                <div class="select-box-wrapper select-hide">
+                                    <label class="sr-only" for="select-category">Choose category for search</label>
+                                    <select class="select-box" id="select-category">
+                                        <option selected="selected" value="">Tất cả</option>
+                                        <option value="">Cơm</option>
+                                        <option value="">Bún</option>
+                                        <option value="">Phở</option>
+                                        <option value="">Bánh canh</option>
+                                        <option value="">Hủ tiếu</option>
+                                        <option value="">Gà rán</option>
+                                        <option value="">Miến</option>
+                                        <option value="">Bún</option>
+                                        <option value="">Mì</option>
+                                        <option value="">Mì quảng</option>
+                                        <option value="">Bánh mì</option>
+                                        <option value="">Đồ ăn tiện lợi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="btn-search" type="submit" class="button button-primary fas fa-search"></button>
+                        </form>
+                    </div>
+                    <!--Nhóm các icon-->
+                    <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                        <ul class="mid-nav g-nav">
+                            <li class="u-d-none-lg">
+                                <a href="home.html">
+                                    <i class="ion ion-md-home"></i>
+                                </a>
+                            </li>
+                            <li class="u-d-none-lg">
+                                <a href="wishlist.html">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cart.html">
+                                    <i class="ion ion-md-basket"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Footer khi là tablet và mobile-->
+                    <div class="footer-mobile__BottomMenuBar-sc-1kqmbou-0 OAJXQ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3 col-md-3">
+                                    <a class="menu-item" href="home.html">
+                                        <i class="fa fa-home fa-2x"></i>
+                                        <div class="text-menu--inactive text-menu--active">Trang chủ</div>
+                                    </a>
+                                </div>
+                                <div class="col-3 col-md-3">
+                                    <a class="menu-item" href="wishlist.html">
+                                        <i class="far fa-heart"></i>
+                                        <div class="text-menu--inactive text-menu--active">Yêu thích</div>
+                                    </a>
+                                </div>
+                                <div class="col-3 col-md-3">
+                                    <a class="menu-item" href="cart.html">
+                                        <i class="ion ion-md-basket" style="font-size: 25px;"></i>
+                                        <div class="text-menu--inactive text-menu--active">Giỏ hàng</div>
+                                    </a>
+                                </div>
+
+                                <div class="col-3 col-md-3">
+                                    <a class="menu-item" href="hoso.html">
+                                        <i class="fas fa-user"></i>
+                                        <div class="text-menu--inactive text-menu--active">Tài khoản</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Header giữa -->
+        <!-- Bottom-Header -->
+        <div class="full-layer-bottom-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="v-menu v-close">
+                            <span class="v-title v-close">
+                                <i class="ion ion-md-menu"></i>
+                                Danh mục sản phẩm
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                            <div class="v-wrapper">
+                                <ul class="v-list animated fadeIn">
+                                    <li>
+                                        <a href="shop-sub-category-all.html">
+                                            Tất cả
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-sub-category-com.html">
+                                            Cơm
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Bún
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Phở
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Bánh canh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Hủ tiếu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Miến
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Bún
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mì
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mì quảng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-sub-category-banh-mi.html">
+                                            Bánh mì
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Đồ ăn tiện lợi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="bottom-nav g-nav d-none d-lg-block">
+                            <li>
+                                <a href="shop-sub-category-giam-gia.html">Các món giảm giá</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html">Về chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="rate.html">Đánh giá</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Header /- -->
+    <!-- app -->
+    <div id="app">
+        <!-- Page Introduction Wrapper -->
+        <div class="page-style-a">
+            <div class="container">
+                <div class="page-intro">
+                    <h2>Phở tái nạm</h2>
+                    <ul class="bread-crumb">
+                        <li class="has-separator">
+                            <i class="ion ion-md-home"></i>
+                            <a href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="is-marked">
+                            <a href="single-product-pho-tai-nam-id03.html">Chi tiết món ăn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Introduction Wrapper /- -->
+        <!-- Single-Product-Full-Width-Page -->
+        <div class="page-detail u-s-p-t-80">
+            <div class="container">
+                <!-- Product-Detail -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- Product-zoom-area -->
+                        <div class="zoom-area">
+                            <img id="zoom-pro" class="img-fluid" src="images/product/pho-tai-nam/1.png" data-zoom-image="images/product/pho-tai-nam/1.png " alt="Zoom Image">
+                            <div id="gallery" class="u-s-m-t-10">
+                                <a class="active" data-image="images/product/pho-tai-nam/1.png " data-zoom-image="images/product/product@4x.jpg">
+                                    <img src="images/product/pho-tai-nam/1.png " alt="Product">
+                                </a>
+                                <a data-image="images/product/pho-tai-nam/2.png " data-zoom-image="images/product/pho-tai-nam/2.png ">
+                                    <img src="images/product/pho-tai-nam/2.png " alt="Product">
+                                </a>
+                                <a data-image="images/product/pho-tai-nam/3.png " data-zoom-image="images/product/pho-tai-nam/3.png ">
+                                    <img src="images/product/pho-tai-nam/3.png " alt="Product">
+                                </a>
+                                <a data-image="images/product/pho-tai-nam/4.png " data-zoom-image="images/product/pho-tai-nam/4.png ">
+                                    <img src="images/product/pho-tai-nam/4.png " alt="Product">
+                                </a>
+                                <a data-image="images/product/pho-tai-nam/5.png " data-zoom-image="images/product/pho-tai-nam/5.png ">
+                                    <img src="images/product/pho-tai-nam/5.png " alt="Product">
+                                </a>
+                                <a data-image="images/product/pho-tai-nam/6.png " data-zoom-image="images/product/pho-tai-nam/6.png ">
+                                    <img src="images/product/pho-tai-nam/6.png " alt="Product">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product-zoom-area /- -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- Product-details -->
+                        <div class="all-information-wrapper">
+                            <div class="section-1-title-breadcrumb-rating">
+                                <div class="product-title">
+                                    <h1>
+                                        <a href="single-product-pho-tai-nam-id03.html">Phở tái nạm</a>
+                                    </h1>
+                                </div>
+                                <ul class="bread-crumb">
+                                    <li class="has-separator">
+                                        <a href="home.html">Trang chủ</a>
+                                    </li>
+                                    <li class="has-separator">
+                                        <a href="shop-sub-category-com.html">Phở </a>
+                                    </li>
+                                    <li class="is-marked">
+                                        <a href="single-product-pho-tai-nam-id03.html">Phở tái nạm</a>
+                                    </li>
+                                </ul>
+                                <div class="product-rating">
+                                    <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                        <span style='width:67px'></span>
+                                    </div>
+                                    <span>(23)</span>
+                                </div>
+                            </div>
+                            <div class="section-2-short-description u-s-p-y-14">
+                                <h6 class="information-heading u-s-m-b-8">Mô tả:</h6>
+                                <p>
+                                    Khám phá hương vị tinh tế và đậm đà của món Phở tái nạm tại nhà hàng chúng tôi. Món ăn này không chỉ là biểu tượng của ẩm thực Việt Nam mà còn là sự kết hợp hoàn hảo giữa những miếng thịt tái mềm mại và nạm bò dai ngon, cùng với hương vị đặc trưng của nước dùng phở thơm nồng.
+                                </p>
+                            </div>
+                            <div class="section-3-price-original-discount u-s-p-y-14">
+                                <div class="price">
+                                    <h4>35.000 đ</h4>
+                                </div>
+                            </div>
+
+                            <div class="section-5-product-variants u-s-p-y-14">
+
+                                <div class="sizes u-s-m-b-11">
+                                    <label for="size-input">Ghi chú:</label>
+                                    <input type="text" id="size-input" class="input-box product-size" placeholder="Ghi chú thêm về yêu cầu của bạn.">
+                                </div>
+                            </div>
+                            <div class="section-6-social-media-quantity-actions u-s-p-y-14">
+                                <form action="#" class="post-form">
+
+                                    <div class="quantity-wrapper u-s-m-b-22">
+                                        <span>Quantity:</span>
+                                        <div class="quantity">
+                                            <input type="text" class="quantity-text-field" value="1">
+                                            <a class="plus-a" data-max="1000">&#43;</a>
+                                            <a class="minus-a" data-min="1">&#45;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="button button-outline-secondary" type="submit">Thêm vào giỏ hàng</button>
+                                        <button class="button button-outline-secondary far fa-heart u-s-m-l-6"></button>
+                                        <button class="button button-outline-secondary far fa-envelope u-s-m-l-6"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Product-details /- -->
+                    </div>
+                </div>
+                <!-- Product-Detail /- -->
+                <!-- Detail-Tabs -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="detail-tabs-wrapper u-s-p-t-80">
+                            <div class="detail-nav-wrapper u-s-m-b-30">
+                                <ul class="nav single-product-nav justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#description">Mô tả</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#specification">Nguyên liệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#review">Đánh giá (15)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <!-- Description-Tab -->
+                                <div class="tab-pane fade active show" id="description">
+                                    <div class="description-whole-container">
+                                        <p class="desc-p u-s-m-b-26">Khám phá hương vị tinh tế và đậm đà của món Phở tái nạm tại nhà hàng chúng tôi. Món ăn này không chỉ là biểu tượng của ẩm thực Việt Nam mà còn là sự kết hợp hoàn hảo giữa những miếng thịt tái mềm mại và nạm bò dai ngon, cùng với hương vị đặc trưng của nước dùng phở thơm nồng.</p>
+                                        <img class="desc-img img-fluid u-s-m-b-26" src="images/product/pho-tai-nam/1.png" alt="Product">
+                                        <!--iframe class="desc-iframe u-s-m-b-45" width="710" height="400" src="images/product/iframe-youtube.jpg" allowfullscreen></iframe-->
+                                    </div>
+                                </div>
+                                <!-- Description-Tab /- -->
+                                <!-- Specifications-Tab -->
+                                <div class="tab-pane fade" id="specification">
+                                    <div class="specification-whole-container">
+                                        <div class="spec-ul u-s-m-b-50">
+                                            <h4 class="spec-heading">Thành phần</h4>
+                                            <ul>
+                                                <li>Miếng thịt bò tái tươi ngon, được cắt mỏng và thêm vào phở khi nước dùng sôi.</li>
+                                                <li>Nạm bò được thái thành những lát mỏng, cung cấp độ dai và ngon miệng cho món ăn.</li>
+                                                <li>Hỗn hợp gia vị tự nhiên, bao gồm hành, gừng, hành phi, tiêu, và các loại gia vị khác, tạo nên hương vị đặc trưng và hấp dẫn của nước dùng phở.</li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-s-m-b-50">
+                                            <h4 class="spec-heading">Một phần gồm có</h4>
+                                            <h3 class="spec-answer">Hộp cơm, canh, muỗng nhựa, giấy ăn</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Specifications-Tab /- -->
+                                <!-- Reviews-Tab -->
+                                <div class="tab-pane fade" id="review">
+                                    <div class="review-whole-container">
+                                        <div class="row r-1 u-s-m-b-26 u-s-p-b-22">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="total-score-wrapper">
+                                                    <h6 class="review-h6">Điểm trung bình</h6>
+                                                    <div class="circle-wrapper">
+                                                        <h1>4.5</h1>
+                                                    </div>
+                                                    <h6 class="review-h6">Dựa trên 23 Đánh giá</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="total-star-meter">
+                                                    <div class="star-wrapper">
+                                                        <span>5 Sao</span>
+                                                        <div class="star">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                    <div class="star-wrapper">
+                                                        <span>4 Sao</span>
+                                                        <div class="star">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                    <div class="star-wrapper">
+                                                        <span>3 Sao</span>
+                                                        <div class="star">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                    <div class="star-wrapper">
+                                                        <span>2 Sao</span>
+                                                        <div class="star">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                    <div class="star-wrapper">
+                                                        <span>1 Sao</span>
+                                                        <div class="star">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row r-2 u-s-m-b-26 u-s-p-b-22">
+                                            <div class="col-lg-12">
+                                                <div class="your-rating-wrapper">
+                                                    <h6 class="review-h6">Đánh giá của bạn rất quan trọng.</h6>
+                                                    <h6 class="review-h6">Bạn đã thưởng thức món này chưa?</h6>
+                                                    <div class="star-wrapper u-s-m-b-8">
+                                                        <div class="star">
+                                                            <span id="your-stars" style='width:0'></span>
+                                                        </div>
+                                                        <label for="your-rating-value"></label>
+                                                        <input id="your-rating-value" type="text" class="text-field" placeholder="0.0">
+                                                        <span id="star-comment"></span>
+                                                    </div>
+                                                    <form>
+                                                        <label for="your-name">
+                                                            Tên
+                                                            <span class="astk"> *</span>
+                                                        </label>
+                                                        <input id="your-name" type="text" class="text-field" placeholder="Tên của bạn">
+                                                        <label for="your-email">
+                                                            Email
+                                                            <span class="astk"> *</span>
+                                                        </label>
+                                                        <input id="your-email" type="text" class="text-field" placeholder="Email của bạn">
+                                                        <label for="review-title">
+                                                            Tiêu đề
+                                                            <span class="astk"> *</span>
+                                                        </label>
+                                                        <input id="review-title" type="text" class="text-field" placeholder="Tiêu đề đánh giá">
+                                                        <label for="review-text-area">
+                                                            Đánh giá
+                                                            <span class="astk"> *</span>
+                                                        </label>
+                                                        <textarea class="text-area u-s-m-b-8" id="review-text-area" placeholder="Đánh giá"></textarea>
+                                                        <button class="button button-outline-secondary">Gửi đánh giá</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Get-Reviews -->
+                                        <div class="get-reviews u-s-p-b-22">
+                                            <!-- Review-Options -->
+                                            <div class="review-options u-s-m-b-16">
+                                                <div class="review-option-heading">
+                                                    <h6>
+                                                        Đánh giá
+                                                        <span> (15) </span>
+                                                    </h6>
+                                                </div>
+                                                <div class="review-option-box">
+                                                    <div class="select-box-wrapper">
+                                                        <label class="sr-only" for="review-sort">Review Sorter</label>
+                                                        <select class="select-box" id="review-sort">
+                                                            <option value="">Xếp theo: Cao nhất</option>
+                                                            <option value="">Xếp theo: Thấp nhất</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Review-Options /- -->
+                                            <!-- All-Reviews -->
+                                            <div class="reviewers">
+                                                <div class="review-data">
+                                                    <div class="reviewer-name-and-date">
+                                                        <h6 class="reviewer-name">Thảo Trang</h6>
+                                                        <h6 class="review-posted-date">10 May 2023</h6>
+                                                    </div>
+                                                    <div class="reviewer-stars-title-body">
+                                                        <div class="reviewer-stars">
+                                                            <div class="star">
+                                                                <span style='width:67px'></span>
+                                                            </div>
+                                                            <span class="review-title">Hương Vị Thơm Ngon Đặc Trưng</span>
+                                                        </div>
+                                                        <p class="review-body">
+                                                            Phở tái nạm ở đây thật sự ngon tuyệt! Nước dùng đậm đà, thịt bò tái mềm và nạm dai ngon. Hương vị đặc trưng từ các loại gia vị làm cho món ăn thêm phần hấp dẫn. Phục vụ nhanh chóng và thái độ phục vụ thân thiện. Chắc chắn sẽ quay lại quán lần sau!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-data">
+                                                    <div class="reviewer-name-and-date">
+                                                        <h6 class="reviewer-name">Đức Huy</h6>
+                                                        <h6 class="review-posted-date">10 June 2023</h6>
+                                                    </div>
+                                                    <div class="reviewer-stars-title-body">
+                                                        <div class="reviewer-stars">
+                                                            <div class="star">
+                                                                <span style='width:67px'></span>
+                                                            </div>
+                                                            <span class="review-title">Một Bát Phở Đích Thực</span>
+                                                        </div>
+                                                        <p class="review-body">
+                                                            Phở tái nạm ở đây không chỉ là một bữa ăn, mà còn là một trải nghiệm. Nước dùng thơm ngon, thịt bò tái mềm và nạm dai tạo nên sự kết hợp hoàn hảo. Đặc biệt, phục vụ nhanh chóng và chu đáo. Rất hài lòng với bữa ăn tại đây!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-data">
+                                                    <div class="reviewer-name-and-date">
+                                                        <h6 class="reviewer-name">Trung Hiếu</h6>
+                                                        <h6 class="review-posted-date">10 July 2023</h6>
+                                                    </div>
+                                                    <div class="reviewer-stars-title-body">
+                                                        <div class="reviewer-stars">
+                                                            <div class="star">
+                                                                <span style='width:67px'></span>
+                                                            </div>
+                                                            <span class="review-title">Hương Vị Quê Hương Trong Một Bát Phở</span>
+                                                        </div>
+                                                        <p class="review-body">
+                                                            Phở tái nạm tại đây thực sự làm tôi nhớ về hương vị quê hương. Nước dùng thơm phức, thịt bò tái mềm mại và nạm dai ngon. Mỗi ngụm phở là một trải nghiệm đặc biệt. Dịch vụ tốt và không gian thoải mái. Một lựa chọn tuyệt vời cho bữa ăn gia đình!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-data">
+                                                    <div class="reviewer-name-and-date">
+                                                        <h6 class="reviewer-name">Lan Anh</h6>
+                                                        <h6 class="review-posted-date">10 March 2023</h6>
+                                                    </div>
+                                                    <div class="reviewer-stars-title-body">
+                                                        <div class="reviewer-stars">
+                                                            <div class="star">
+                                                                <span style='width:67px'></span>
+                                                            </div>
+                                                            <span class="review-title">Hương Vị Đậm Đà và Thơm Ngon</span>
+                                                        </div>
+                                                        <p class="review-body">
+                                                            Phở tái nạm ở đây thật sự ngon miệng! Nước dùng đậm đà, thịt bò tái mềm và nạm dai ngon. Sự kết hợp của các gia vị làm cho món ăn thêm phần đặc biệt. Phục vụ nhanh chóng và thân thiện. Sẽ quay lại quán để thưởng thức hương vị đặc trưng của phở!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-data">
+                                                    <div class="reviewer-name-and-date">
+                                                        <h6 class="reviewer-name">Ngọc Ánh</h6>
+                                                        <h6 class="review-posted-date">12 May 2013</h6>
+                                                    </div>
+                                                    <div class="reviewer-stars-title-body">
+                                                        <div class="reviewer-stars">
+                                                            <div class="star">
+                                                                <span style='width:67px'></span>
+                                                            </div>
+                                                            <span class="review-title">Một Bữa Ăn Hài Lòng</span>
+                                                        </div>
+                                                        <p class="review-body">
+                                                            Phở tái nạm ở đây thực sự đáng để thử! Nước dùng thơm ngon, thịt bò tái mềm và nạm dai ngon. Sự phục vụ nhiệt tình và chu đáo. Một lựa chọn tốt cho bữa ăn ngon và bổ dưỡng. Sẽ quay lại quán lần sau!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- All-Reviews /- -->
+                                            <!-- Pagination-Review -->
+                                            <div class="pagination-review-area">
+                                                <div class="pagination-review-number">
+                                                    <ul>
+                                                        <li style="display: none">
+                                                            <a href="single-product-pho-tai-nam-id03.html" title="Previous">
+                                                                <i class="fas fa-angle-left"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="single-product-pho-tai-nam-id03.html">1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="single-product-pho-tai-nam-id03.html">2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="single-product-pho-tai-nam-id03.html">3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="single-product-pho-tai-nam-id03.html">...</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="single-product-pho-tai-nam-id03.html">10</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="single-product-pho-tai-nam-id03.html" title="Next">
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Pagination-Review /- -->
+                                        </div>
+                                        <!-- Get-Reviews /- -->
+                                    </div>
+                                </div>
+                                <!-- Reviews-Tab /- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Detail-Tabs /- -->
+                <!-- Different-Product-Section -->
+                <div class="detail-different-product-section u-s-p-t-80">
+                    <!-- Similar-Products -->
+                    <section class="section-maker">
+                        <div class="container">
+                            <div class="sec-maker-header text-center">
+                                <h3 class="sec-maker-h3">Món ăn mua kèm</h3>
+                            </div>
+                            <div class="slider-fouc">
+                                <div class="products-slider owl-carousel" data-item="4">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product-com-rang-dua-bo-id01.html">
+                                                <img class="img-fluid" src="https://img.ws.mms.shopee.vn/vn-11134201-7qukw-lf9ijvqgdh8q68" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product-com-rang-dua-bo-id01.html">Pepsi</a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                        <span style='width:0'></span>
+                                                    </div>
+                                                    <span>(0)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    10.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    12.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product-com-rang-dua-bo-id01.html">
+                                                <img class="img-fluid" src="https://img.sosanhgia.com/images/4cbda30027cf46e3b55e4efc4d103f99/nuoc-tang-luc-number-1.jpeg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product-com-rang-dua-bo-id01.html">Number 1</a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                        <span style='width:0'></span>
+                                                    </div>
+                                                    <span>(0)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    10.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    12.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag new">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://hutiuthanhdat.vn/data/Product/nuoc-cam-ep.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+
+
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Nước ép cam </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style='width:67px'></span>
+                                                    </div>
+                                                    <span>(23)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    15.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    20.000
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://hutiuthanhdat.vn/data/Product/nuoc-ep-dua-hau-tao.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">
+                                                        Nước ép dưa hấu
+                                                    </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style='width:67px'></span>
+                                                    </div>
+                                                    <span>(23)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    15.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    20.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Similar-Products /- -->
+                    <!-- Recently-View-Products  -->
+                    <section class="section-maker">
+                        <div class="container">
+                            <div class="sec-maker-header text-center">
+                                <h3 class="sec-maker-h3">Mõn vừa xem</h3>
+                            </div>
+                            <div class="slider-fouc">
+                                <div class="products-slider owl-carousel" data-item="4">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product-bun-bo-hue-id02.html">
+                                                <img class="img-fluid" src="https://product.hstatic.net/1000274502/product/bun-bo-hue-tai-nam-imom_d3683c4896874767b0fcf273ad34e0ab_master.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bún bò Huế </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                        <span style='width:0'></span>
+                                                    </div>
+                                                    <span>(0)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    30.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    35.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Recently-View-Products /- -->
+                </div>
+                <!-- Different-Product-Section /- -->
+            </div>
+        </div>
+        <!-- Single-Product-Full-Width-Page /- -->
+        <!-- Dummy Selectbox -->
+        <div class="select-dummy-wrapper">
+            <select id="compute-select">
+                <option id="compute-option">All</option>
+            </select>
+        </div>
+        <!-- Dummy Selectbox /- -->
+        <!-- Responsive-Search -->
+        <div class="responsive-search-wrapper">
+            <button type="button" class="button ion ion-md-close" id="responsive-search-close-button"></button>
+            <div class="responsive-search-container">
+                <div class="container">
+                    <p>Start typing and press Enter to search</p>
+                    <form class="responsive-search-form">
+                        <label class="sr-only" for="search-text">Search</label>
+                        <input id="search-text" type="text" class="responsive-search-field" placeholder="PLEASE SEARCH">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Responsive-Search /- -->
+        <!-- Quick-view-Modal -->
+        <div id="quick-view" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="button dismiss-button ion ion-ios-close" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <!-- Product-zoom-area -->
+                                <div class="zoom-area">
+                                    <img id="zoom-pro-quick-view" class="img-fluid" src="images/product/pho-tai-nam/1.png" data-zoom-image="images/product/pho-tai-nam/1.png " alt="Zoom Image">
+                                    <div id="gallery-quick-view" class="u-s-m-t-10">
+                                        <a class="active" data-image="images/product/pho-tai-nam/1.png " data-zoom-image="images/product/pho-tai-nam/1.png ">
+                                            <img src="images/product/pho-tai-nam/1.png " alt="Product">
+                                        </a>
+                                        <a data-image="images/product/pho-tai-nam/2.png " data-zoom-image="images/product/pho-tai-nam/2.png ">
+                                            <img src="images/product/pho-tai-nam/2.png " alt="Product">
+                                        </a>
+                                        <a data-image="images/product/pho-tai-nam/3.png " data-zoom-image="images/product/pho-tai-nam/3.png ">
+                                            <img src="images/product/pho-tai-nam/3.png " alt="Product">
+                                        </a>
+                                        <a data-image="images/product/pho-tai-nam/4.png " data-zoom-image="images/product/pho-tai-nam/4.png ">
+                                            <img src="images/product/pho-tai-nam/4.png " alt="Product">
+                                        </a>
+                                        <a data-image="images/product/pho-tai-nam/5.png " data-zoom-image="images/product/pho-tai-nam/5.png ">
+                                            <img src="images/product/pho-tai-nam/5.png " alt="Product">
+                                        </a>
+                                        <a data-image="images/product/pho-tai-nam/6.png " data-zoom-image="images/product/pho-tai-nam/6.png ">
+                                            <img src="images/product/pho-tai-nam/6.png " alt="Product">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Product-zoom-area /- -->
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <!-- Product-details -->
+                                <div class="all-information-wrapper">
+                                    <div class="section-1-title-breadcrumb-rating">
+                                        <div class="product-title">
+                                            <h1>
+                                                <a href="single-product-pho-tai-nam-id03.html">Phở tái nạm</a>
+                                            </h1>
+                                        </div>
+                                        <ul class="bread-crumb">
+                                            <li class="has-separator">
+                                                <a href="home.html">Home</a>
+                                            </li>
+                                            <li class="has-separator">
+                                                <a href="shop-v1-root-category.html">Phở</a>
+                                            </li>
+                                            <li class="is-marked">
+                                                <a href="shop-v2-sub-category.html">Phở tái nạm</a>
+
+                                        </ul>
+                                        <div class="product-rating">
+                                            <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                <span style='width:67px'></span>
+                                            </div>
+                                            <span>(23)</span>
+                                        </div>
+                                    </div>
+                                    <div class="section-2-short-description u-s-p-y-14">
+                                        <h6 class="information-heading u-s-m-b-8">Mô tả:</h6>
+                                        <p>Khám phá hương vị tinh tế và đậm đà của món Phở tái nạm tại nhà hàng chúng tôi. Món ăn này không chỉ là biểu tượng của ẩm thực Việt Nam mà còn là sự kết hợp hoàn hảo giữa những miếng thịt tái mềm mại và nạm bò dai ngon, cùng với hương vị đặc trưng của nước dùng phở thơm nồng.</p>
+                                    </div>
+                                    <div class="section-3-price-original-discount u-s-p-y-14">
+                                        <div class="price">
+                                            <h4>35 đ</h4>
+                                        </div>
+                                    </div>
+                                    <div class="section-6-social-media-quantity-actions u-s-p-y-14">
+                                        <form action="#" class="post-form">
+                                            <div class="quantity-wrapper u-s-m-b-22">
+                                                <span>Số lượng:</span>
+                                                <div class="quantity">
+                                                    <input type="text" class="quantity-text-field" value="1">
+                                                    <a class="plus-a" data-max="1000">&#43;</a>
+                                                    <a class="minus-a" data-min="1">&#45;</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="button button-outline-secondary" type="submit">Thêm vào giỏ hàng</button>
+                                                <button class="button button-outline-secondary far fa-heart u-s-m-l-6"></button>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Product-details /- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quick-view-Modal /- -->
+    </div>
+    <!-- app /- -->
+    <!--[if lte IE 9]>
+    <div class="app-issue">
+        <div class="vertical-center">
+            <div class="text-center">
+                <h1> Bạn đang sử dụng một trình duyệt lỗi thời.</h1>
+                <span> Trang web này không tương thích với trình duyệt của bạn. Vui lòng nâng cấp trình duyệt của bạn để cải thiện tính bảo mật và trải nghiệm của bạn.</span>
+            </div>
+        </div>
+    </div>
+    <style> #app {
+        display: none;
+    } </style>
+    <![endif]-->
+    <!-- NoScript -->
+    <noscript>
+        <div class="app-issue">
+            <div class="vertical-center">
+                <div class="text-center">
+                    <h1>JavaScript is disabled in your browser.</h1>
+                    <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            #app {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <!-- Modernizr-JS -->
+    <script type="text/javascript" src="js/vendor/modernizr-custom.min.js"></script>
+    <!-- NProgress -->
+    <script type="text/javascript" src="js/nprogress.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- ScrollUp -->
+    <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <!-- Elevate Zoom -->
+    <script type="text/javascript" src="js/jquery.elevatezoom.min.js"></script>
+    <!-- jquery-ui-range-slider -->
+    <script type="text/javascript" src="js/jquery-ui.range-slider.min.js"></script>
+    <!-- jQuery Slim-Scroll -->
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <!-- jQuery Resize-Select -->
+    <script type="text/javascript" src="js/jquery.resize-select.min.js"></script>
+    <!-- jQuery Custom Mega Menu -->
+    <script type="text/javascript" src="js/jquery.custom-megamenu.min.js"></script>
+    <!-- jQuery Countdown -->
+    <script type="text/javascript" src="js/jquery.custom-countdown.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Mid-Footer -->
+            <div class="mid-footer-wrapper u-s-p-b-80">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-list">
+                            <h6>CHĂM SÓC KHÁCH HÀNG</h6>
+                            <ul>
+                                <li>
+                                    <a href="faq.html">Câu hỏi thường gặp</a>
+                                </li>
+                                <li>
+                                    <a href="qldonhang.html">Theo dõi đơn hàng</a>
+                                </li>
+                                <li>
+                                    <a href="terms-and-conditions.html">Điều khoản và điều kiện</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-list">
+                            <h6>VỀ CANTEEN FIRETECH</h6>
+                            <ul>
+                                <li>
+                                    <a href="home.html">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-list">
+                            <h6>THÔNG TIN</h6>
+                            <ul>
+                                <li>
+                                    <a href="store-directory.html">Danh mục món ăn</a>
+                                </li>
+                                <li>
+                                    <a href="wishlist.html">Món ăn yêu thích</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">Giỏ hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-list">
+                            <h6>Địa chỉ</h6>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-location-arrow u-s-m-r-9"></i>
+                                    <span>Khu chức năng số 15 - Đô thị mới Nam Thành phố, xã Phong Phú, huyện Bình Chánh</span>
+                                </li>
+                                <li>
+                                    <a href="tel:+84 444 898 222">
+                                        <i class="fas fa-phone u-s-m-r-9"></i>
+                                        <span>+84 444 898 222</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:firetech@ueh.edu.vn">
+                                        <i class="fas fa-envelope u-s-m-r-9"></i>
+                                        <span>
+                                            firetech@ueh.edu.vn
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mid-Footer /- -->
+            <!-- Bottom-Footer -->
+            <div class="bottom-footer-wrapper">
+                <div class="social-media-wrapper">
+                    <ul class="social-media-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-rss"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright-text">
+                    Copyright &copy; 2018
+                    <a href="home.html">Canteen FireTech</a> All Right Reserved
+                </p>
+            </div>
+        </div>
+        <!-- Bottom-Footer /- -->
+    </footer>
+    <!-- Footer /- -->
+
+</body>
+</html>

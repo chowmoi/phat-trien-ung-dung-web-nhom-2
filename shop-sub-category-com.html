@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Canteen FireTech - Các món cơm</title>
+    <!-- Standard Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href="css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="css/bundle.css">
+</head>
+
+<body>
+    <!-- app -->
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <!-- Header trên-->
+            <div class="full-layer-outer-header d-none d-lg-block">
+                <div class="container clearfix ">
+                    <div class="d-lg-block">
+                        <nav>
+                            <ul class="primary-nav g-nav ">
+                                <li>
+                                    <a href="tel:+84-444-898-222">
+                                        <i class="fas fa-phone u-c-brand u-s-m-r-9"></i>
+                                        Telephone: +84 444 989 222
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:firetech@ueh.edu.vn">
+                                        <i class="fas fa-envelope u-c-brand u-s-m-r-9"></i>
+                                        E-mail: firetech@ueh.edu.vn
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav>
+                        <ul class="secondary-nav g-nav">
+                            <li>
+                                <a>
+                                    Tài khoản
+                                    <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                                </a>
+
+                                <ul class="g-dropdown" style="width:200px">
+                                    <li>
+                                        <a href="hoso.html">
+                                            <i class="fas fa-cog u-s-m-r-9"></i>
+                                            Hồ sơ của tôi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="far fa-heart u-s-m-r-9"></i>
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html">
+                                            <i class="fas fa-sign-in-alt u-s-m-r-9"></i>
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Header trên/- -->
+            <!--Header giữa -->
+            <div class="full-layer-mid-header">
+                <div class="container">
+                    <div class="row clearfix align-items-center">
+                        <!--Logo-->
+                        <div class="col-lg-3 col-md-5 col-sm-5">
+                            <div class="brand-logo text-lg-center">
+                                <a href="home.html">
+                                    <img src="images/main-logo/Logo_CanTeen.png" alt="Fire Tech Logo" class="app-brand-logo"
+                                         width="189" height="63">
+                                </a>
+                            </div>
+                        </div>
+                        <!--Thanh tìm kiếm - DONE-->
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <form class="form-searchbox text-center">
+                                <label class="sr-only" for="search-landscape">Search</label>
+                                <input id="search-landscape" type="text" class="text-field" placeholder="Tìm món ăn">
+                                <div class="select-box-position">
+                                    <div class="select-box-wrapper select-hide">
+                                        <label class="sr-only" for="select-category">Choose category for search</label>
+                                        <select class="select-box" id="select-category">
+                                            <option selected="selected" value="">Tất cả</option>
+                                            <option value="">Cơm</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Phở</option>
+                                            <option value="">Bánh canh</option>
+                                            <option value="">Hủ tiếu</option>
+                                            <option value="">Gà rán</option>
+                                            <option value="">Miến</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Mì</option>
+                                            <option value="">Mì quảng</option>
+                                            <option value="">Bánh mì</option>
+                                            <option value="">Đồ ăn tiện lợi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button id="btn-search" type="submit" class="button button-primary fas fa-search"></button>
+                            </form>
+                        </div>
+                        <!--Nhóm các icon-->
+                        <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                            <ul class="mid-nav g-nav">
+                                <li class="u-d-none-lg">
+                                    <a href="home.html">
+                                        <i class="ion ion-md-home"></i>
+                                    </a>
+                                </li>
+                                <li class="u-d-none-lg">
+                                    <a href="wishlist.html">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        <i class="ion ion-md-basket"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--Footer khi là tablet và mobile-->
+                        <div class="footer-mobile__BottomMenuBar-sc-1kqmbou-0 OAJXQ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="home.html">
+                                            <i class="fa fa-home fa-2x"></i>
+                                            <div class="text-menu--inactive text-menu--active">Trang chủ</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="wishlist.html">
+                                            <i class="far fa-heart"></i>
+                                            <div class="text-menu--inactive text-menu--active">Yêu thích</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="cart.html">
+                                            <i class="ion ion-md-basket" style="font-size: 25px;"></i>
+                                            <div class="text-menu--inactive text-menu--active">Giỏ hàng</div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="hoso.html">
+                                            <i class="fas fa-user"></i>
+                                            <div class="text-menu--inactive text-menu--active">Tài khoản</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Header giữa -->
+            <!-- Bottom-Header -->
+            <div class="full-layer-bottom-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="v-menu v-close">
+                                <span class="v-title v-close">
+                                    <i class="ion ion-md-menu"></i>
+                                    Danh mục sản phẩm
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                                <div class="v-wrapper">
+                                    <ul class="v-list animated fadeIn">
+                                        <li>
+                                            <a href="shop-sub-category-all.html">
+                                                Tất cả
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-com.html">
+                                                Cơm
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Phở
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bánh canh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Hủ tiếu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Miến
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì quảng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-banh-mi.html">
+                                                Bánh mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Đồ ăn tiện lợi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="bottom-nav g-nav d-none d-lg-block">
+                                <li>
+                                    <a href="shop-sub-category-giam-gia.html">Các món giảm giá</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="rate.html">Đánh giá</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <!-- Header /- -->
+        <!-- Page Introduction Wrapper -->
+        <div class="page-style-a">
+            <div class="container">
+                <div class="page-intro">
+                    <h2>Các món cơm</h2>
+                    <ul class="bread-crumb">
+                        <li class="has-separator">
+                            <i class="ion ion-md-home"></i>
+                            <a href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="is-marked">
+                            <a href="shop-sub-category-com.html">Các món cơm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Introduction Wrapper /- -->
+        <!-- Shop-Page -->
+        <div class="page-shop u-s-p-t-80">
+            <div class="container">
+                <!-- Shop-Intro -->
+                <div class="shop-intro">
+                    <ul class="bread-crumb">
+                        <li class="has-separator">
+                            <a href="home.html">Trang chủ</a>
+                        </li>
+
+                        <li class="is-marked">
+                            <a href="shop-sub-category-com.html">Các món cơm</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Shop-Intro /- -->
+                <div class="row">
+                    <!-- Shop-Left-Side-Bar-Wrapper -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="fetch-categories">
+                            <h3 class="title-name">Danh mục sản phẩm</h3>
+                            <ul>
+                                <li>
+                                    <a href="shop-sub-category-all.html">
+                                        Tất cả sản phẩm
+                                        <span class="total-fetch-items">(62)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-sub-category-mua-nhieu.html">
+                                        Được mua nhiều
+                                        <span class="total-fetch-items">(7)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-sub-category-giam-gia.html">
+                                        Giảm giá 25%
+                                        <span class="total-fetch-items">(7)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-sub-category-com.html" style=" color: red;">
+                                        Các món cơm
+                                        <span class="total-fetch-items" style=" color: red;">(5)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-sub-category-banh-mi.html">
+                                        Các món bánh mì
+                                        <span class="total-fetch-items">(7)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Fetch-Categories-from-Root-Category  /- -->
+                        <!-- Filter-Price -->
+                        <div class="facet-filter-by-price">
+                            <h3 class="title-name">Giá</h3>
+                            <form class="facet-form" action="#" method="post">
+                                <!-- Final-Result -->
+                                <div class="amount-result clearfix">
+                                    <div class="price-from">0 đ</div>
+                                    <div class="price-to">40.000 đ</div>
+                                </div>
+                                <!-- Final-Result /- -->
+                                <!-- Range-Slider  -->
+                                <div class="price-filter"></div>
+                                <!-- Range-Slider /- -->
+                                <!-- Range-Manipulator -->
+                                <div class="price-slider-range" data-min="0" data-max="40000" data-default-low="0" data-default-high="40000" data-currency="đ"></div>
+                                <!-- Range-Manipulator /- -->
+                                <button type="submit" class="button button-primary">Filter</button>
+                            </form>
+                        </div>
+                        <!-- Filter-Price /- -->
+                        <!-- Filter-Free-Shipping -->
+                        <div class="facet-filter-by-shipping">
+                            <h3 class="title-name">Giao hàng</h3>
+                            <form class="facet-form" action="#" method="post">
+                                <input type="checkbox" class="check-box" id="cb-free-ship">
+                                <label class="label-text" for="cb-free-ship">Miễn phí giao hàng</label>
+                            </form>
+                        </div>
+                        <!-- Filter-Free-Shipping /- -->
+                        <!-- Filter-Rating -->
+                        <div class="facet-filter-by-rating">
+                            <h3 class="title-name">Đánh giá</h3>
+                            <div class="facet-form">
+                                <!-- 5 Stars -->
+                                <div class="facet-link">
+                                    <div class="item-stars">
+                                        <div class='star'>
+                                            <span style='width:76px'></span>
+                                        </div>
+                                    </div>
+                                    <span class="total-fetch-items">(12)</span>
+                                </div>
+                                <!-- 5 Stars /- -->
+                                <!-- 4 & Up Stars -->
+                                <div class="facet-link">
+                                    <div class="item-stars">
+                                        <div class='star'>
+                                            <span style='width:60px'></span>
+                                        </div>
+                                    </div>
+                                    <span class="total-fetch-items"> (8)</span>
+                                </div>
+                                <!-- 4 & Up Stars /- -->
+                                <!-- 3 & Up Stars -->
+                                <div class="facet-link">
+                                    <div class="item-stars">
+                                        <div class='star'>
+                                            <span style='width:45px'></span>
+                                        </div>
+                                    </div>
+                                    <span class="total-fetch-items">(3)</span>
+                                </div>
+                                <!-- 3 & Up Stars /- -->
+                                <!-- 2 & Up Stars -->
+                                <div class="facet-link">
+                                    <div class="item-stars">
+                                        <div class='star'>
+                                            <span style='width:30px'></span>
+                                        </div>
+                                    </div>
+                                    <span class="total-fetch-items"> (2)</span>
+                                </div>
+                                <!-- 2 & Up Stars /- -->
+                                <!-- 1 & Up Stars -->
+                                <div class="facet-link">
+                                    <div class="item-stars">
+                                        <div class='star'>
+                                            <span style='width:15px'></span>
+                                        </div>
+                                    </div>
+                                    <span class="total-fetch-items"> (1)</span>
+                                </div>
+                                <!-- 1 & Up Stars /- -->
+                            </div>
+                        </div>
+                        <!-- Filter-Rating -->
+                        <!-- Filters /- -->
+                    </div>
+                    <!-- Shop-Left-Side-Bar-Wrapper /- -->
+                    <!-- Shop-Right-Wrapper -->
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <!-- Page-Bar -->
+                        <div class="page-bar clearfix">
+                            <div class="shop-settings">
+                                <a id="list-anchor" class="active">
+                                    <i class="fas fa-th-list"></i>
+                                </a>
+                                <a id="grid-anchor">
+                                    <i class="fas fa-th"></i>
+                                </a>
+                            </div>
+                            <!-- Toolbar Sorter 1  -->
+                            <div class="toolbar-sorter">
+                                <div class="select-box-wrapper">
+                                    <label class="sr-only" for="sort-by">Sort By</label>
+                                    <select class="select-box" id="sort-by">
+                                        <option selected="selected" value="">Xếp theo: Bán chạy nhất</option>
+                                        <option value="">Xếp theo: Giá cao nhất</option>
+                                        <option value="">Xếp theo: Giá thấp nhất</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- //end Toolbar Sorter 1  -->
+                            <!-- Toolbar Sorter 2  -->
+                            <div class="toolbar-sorter-2">
+                                <div class="select-box-wrapper">
+                                    <label class="sr-only" for="show-records">Show Records Per Page</label>
+                                    <select class="select-box" id="show-records">
+                                        <option selected="selected" value="">Show: 8</option>
+                                        <option value="">Show: 16</option>
+                                        <option value="">Show: 28</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- //end Toolbar Sorter 2  -->
+                        </div>
+                        <!-- Page-Bar /- -->
+                        <!-- Row-of-Product-Container -->
+                        <div class="row product-container list-style">
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="single-product-.html">
+                                            <img class="img-fluid" src="https://barona.vn/storage/meo-vat/45/com-rang-dua-bo.jpg" alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">
+                                                Add to
+                                                Wishlist
+                                            </a>
+                                            <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+                                            <h6 class="item-title">
+                                                <a href="single-product-com-rang-dua-bo-id01.html">Cơm rang dưa bò</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    Món này kết hợp hạt cơm vàng ươm, giòn rụm được xào cùng với
+                                                    thịt bò mềm và dưa chua giòn, tạo nên một món ăn hấp dẫn, đầy đủ chất dinh dưỡng và
+                                                    không gây ngán.
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            <div class="item-new-price">
+                                                25.000 đ
+                                            </div>
+                                            <div class="item-old-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="single-product-.html">
+                                            <img class="img-fluid"
+                                                 src="https://cdn.tgdd.vn/2021/12/CookRecipe/GalleryStep/thanh-pham-116.jpg"
+                                                 alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">
+                                                Add to
+                                                Wishlist
+                                            </a>
+                                            <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+                                            <h6 class="item-title">
+                                                <a href="single-product-com-ga-xe-id07.html">Cơm gà xé</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    Khám phá hương vị truyền thống và ngon miệng của món cơm gà
+                                                    xé tại nhà hàng chúng tôi. Một món ăn phổ biến và yêu thích, cơm gà xé kết hợp giữa
+                                                    cơm trắng thơm ngon và gà thái nhỏ, tươi ngon, tạo nên một bữa ăn bổ dưỡng và ngon
+                                                    miệng.
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            <div class="item-new-price">
+                                                26.000 đ
+                                            </div>
+                                            <div class="item-old-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="single-product-.html">
+                                            <img class="img-fluid" src="https://vietd.edu.vn/datafiles/38/2023-08/31848625-com-tam-suon-bi-ba-chi.png" alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">
+                                                Add to
+                                                Wishlist
+                                            </a>
+                                            <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+                                            <h6 class="item-title">
+                                                <a href="single-product-com-tam-id12.html">Cơm tấm</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    Khám phá hương vị truyền thống và đặc trưng của món cơm tấm
+                                                    tại nhà hàng chúng tôi. Một món ăn phổ biến và yêu thích trong ẩm thực Sài Gòn, cơm
+                                                    tấm kết hợp giữa cơm trắng mềm mại, thơm ngon và các loại thức ăn đa dạng, tạo nên
+                                                    một trải nghiệm ẩm thực độc đáo và bổ dưỡng.
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            <div class="item-new-price">
+                                                27.000 đ
+                                            </div>
+                                            <div class="item-old-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="single-product-.html">
+                                            <img class="img-fluid"
+                                                 src="https://alotoday.vn/uploads/images/202312/img_x300_657901d5b73065-85518154-20289633.png" alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">
+                                                Add to
+                                                Wishlist
+                                            </a>
+                                            <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+                                            <h6 class="item-title">
+                                                <a href="single-product-com-chien-duong-chau-id18.html">Cơm chiên dương châu</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    Hãy khám phá hương vị đặc biệt và thơm ngon của món cơm
+                                                    chiên dương châu tại nhà hàng của chúng tôi. Cơm chiên dương châu là một món ăn
+                                                    truyền thống của ẩm thực Á Đông, kết hợp giữa cơm, thịt và rau củ, tạo ra một bữa ăn
+                                                    đầy đủ dinh dưỡng và hấp dẫn.
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            <div class="item-new-price">
+                                                30.000 đ
+                                            </div>
+                                            <div class="item-old-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="single-product-.html">
+                                            <img class="img-fluid" src="https://paradisefood.vn/wp-content/uploads/2019/04/muc-xao-cay.jpg" alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">
+                                                Add to
+                                                Wishlist
+                                            </a>
+                                            <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+                                            <h6 class="item-title">
+                                                <a href="single-product-com-muc-xao-id39.html">Cơm mực xào</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    Hãy thưởng thức hương vị đậm đà và thơm ngon của món cơm mực
+                                                    xào tại nhà hàng của chúng tôi. Cơm mực xào là sự kết hợp hài hòa giữa cơm trắng
+                                                    thơm mềm và mực xào thơm lừng, tạo ra một trải nghiệm ẩm thực đặc biệt với hương vị
+                                                    của đại dương.
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            <div class="item-new-price">
+                                                35.000 đ
+                                            </div>
+                                            <div class="item-old-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row-of-Product-Container /- -->
+                    </div>
+                    <!-- Shop-Right-Wrapper /- -->
+                </div>
+            </div>
+        </div>
+        <!-- Shop-Page /- -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+
+                <!-- Mid-Footer -->
+                <div class="mid-footer-wrapper u-s-p-b-80">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>CHĂM SÓC KHÁCH HÀNG</h6>
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li>
+                                        <a href="qldonhang.html">Theo dõi đơn hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-and-conditions.html">Điều khoản và điều kiện</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>VỀ CANTEEN FIRETECH</h6>
+                                <ul>
+                                    <li>
+                                        <a href="home.html">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>THÔNG TIN</h6>
+                                <ul>
+                                    <li>
+                                        <a href="store-directory.html">Danh mục món ăn</a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html">Món ăn yêu thích</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">Giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>Địa chỉ</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-location-arrow u-s-m-r-9"></i>
+                                        <span>Khu chức năng số 15 - Đô thị mới Nam Thành phố, xã Phong Phú, huyện Bình Chánh</span>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+84 444 898 222">
+                                            <i class="fas fa-phone u-s-m-r-9"></i>
+                                            <span>+84 444 898 222</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:firetech@ueh.edu.vn">
+                                            <i class="fas fa-envelope u-s-m-r-9"></i>
+                                            <span>
+                                                firetech@ueh.edu.vn
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mid-Footer /- -->
+                <!-- Bottom-Footer -->
+                <div class="bottom-footer-wrapper">
+                    <div class="social-media-wrapper">
+                        <ul class="social-media-list">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-rss"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright-text">
+                        Copyright &copy; 2018
+                        <a href="home.html">Canteen FireTech</a> All Right Reserved
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom-Footer /- -->
+        </footer>
+        <!-- Footer /- -->
+        <!-- Dummy Selectbox -->
+        <div class="select-dummy-wrapper">
+            <select id="compute-select">
+                <option id="compute-option">All</option>
+            </select>
+        </div>
+        <!-- Dummy Selectbox /- -->
+        <!-- Responsive-Search -->
+        <div class="responsive-search-wrapper">
+            <button type="button" class="button ion ion-md-close" id="responsive-search-close-button"></button>
+            <div class="responsive-search-container">
+                <div class="container">
+                    <p>Start typing and press Enter to search</p>
+                    <form class="responsive-search-form">
+                        <label class="sr-only" for="search-text">Search</label>
+                        <input id="search-text" type="text" class="responsive-search-field" placeholder="PLEASE SEARCH">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Responsive-Search /- -->
+
+    </div>
+    <!-- app /- -->
+    <!--[if lte IE 9]>
+    <div class="app-issue">
+        <div class="vertical-center">
+            <div class="text-center">
+                <h1>You are using an outdated browser.</h1>
+                <span>This web app is not compatible with following browser. Please upgrade your browser to improve your security and experience.</span>
+            </div>
+        </div>
+    </div>
+    <style> #app {
+        display: none;
+    } </style>
+    <![endif]-->
+    <!-- NoScript -->
+    <noscript>
+        <div class="app-issue">
+            <div class="vertical-center">
+                <div class="text-center">
+                    <h1>JavaScript is disabled in your browser.</h1>
+                    <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            #app {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+window.ga = function() {
+    ga.q.push(arguments)
+};
+ga.q = [];
+ga.l = +new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <!-- Modernizr-JS -->
+    <script type="text/javascript" src="js/vendor/modernizr-custom.min.js"></script>
+    <!-- NProgress -->
+    <script type="text/javascript" src="js/nprogress.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- ScrollUp -->
+    <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+    <!-- Elevate Zoom -->
+    <script type="text/javascript" src="js/jquery.elevatezoom.min.js"></script>
+    <!-- jquery-ui-range-slider -->
+    <script type="text/javascript" src="js/jquery-ui.range-slider.min.js"></script>
+    <!-- jQuery Slim-Scroll -->
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <!-- jQuery Resize-Select -->
+    <script type="text/javascript" src="js/jquery.resize-select.min.js"></script>
+    <!-- jQuery Custom Mega Menu -->
+    <script type="text/javascript" src="js/jquery.custom-megamenu.min.js"></script>
+    <!-- jQuery Countdown -->
+    <script type="text/javascript" src="js/jquery.custom-countdown.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
+
+

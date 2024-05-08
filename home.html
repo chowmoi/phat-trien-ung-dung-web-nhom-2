@@ -1,0 +1,2248 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Canteen FireTech - Trang chủ</title>
+    <!-- Standard Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href="css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="css/bundle.css">
+</head>
+
+<body>
+
+<!-- app -->
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <!-- Header trên-->
+            <div class="full-layer-outer-header d-none d-lg-block">
+                <div class="container clearfix ">
+                    <div class="d-lg-block">
+                        <nav>
+                            <ul class="primary-nav g-nav ">
+                                <li>
+                                    <a href="tel:+84-444-898-222">
+                                        <i class="fas fa-phone u-c-brand u-s-m-r-9"></i>
+                                        Telephone: +84 444 989 222
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:firetech@ueh.edu.vn">
+                                        <i class="fas fa-envelope u-c-brand u-s-m-r-9"></i>
+                                        E-mail: firetech@ueh.edu.vn
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav>
+                        <ul class="secondary-nav g-nav">
+                            <li>
+                                <a>
+                                    Tài khoản
+                                    <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                                </a>
+
+                                <ul class="g-dropdown" style="width:200px">
+                                    <li>
+                                        <a href="hoso.html">
+                                            <i class="fas fa-cog u-s-m-r-9"></i>
+                                            Hồ sơ của tôi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="far fa-heart u-s-m-r-9"></i>
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html">
+                                            <i class="fas fa-sign-in-alt u-s-m-r-9"></i>
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Header trên/- -->
+            <!--Header giữa -->
+            <div class="full-layer-mid-header">
+                <div class="container">
+                    <div class="row clearfix align-items-center">
+                        <!--Logo-->
+                        <div class="col-lg-3 col-md-5 col-sm-5">
+                            <div class="brand-logo text-lg-center">
+                                <a href="home.html">
+                                    <img src="images/main-logo/Logo_CanTeen.png" alt="Fire Tech Logo" class="app-brand-logo"
+                                         width="189" height="63">
+                                </a>
+                            </div>
+                        </div>
+                        <!--Thanh tìm kiếm - DONE-->
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <form class="form-searchbox text-center">
+                                <label class="sr-only" for="search-landscape">Search</label>
+                                <input id="search-landscape" type="text" class="text-field" placeholder="Tìm món ăn">
+                                <div class="select-box-position">
+                                    <div class="select-box-wrapper select-hide">
+                                        <label class="sr-only" for="select-category">Choose category for search</label>
+                                        <select class="select-box" id="select-category">
+                                            <option selected="selected" value="">Tất cả</option>
+                                            <option value="">Cơm</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Phở</option>
+                                            <option value="">Bánh canh</option>
+                                            <option value="">Hủ tiếu</option>
+                                            <option value="">Gà rán</option>
+                                            <option value="">Miến</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Mì</option>
+                                            <option value="">Mì quảng</option>
+                                            <option value="">Bánh mì</option>
+                                            <option value="">Đồ ăn tiện lợi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button id="btn-search" type="submit" class="button button-primary fas fa-search"></button>
+                            </form>
+                        </div>
+                        <!--Nhóm các icon-->
+                        <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                            <ul class="mid-nav g-nav">
+                                <li class="u-d-none-lg">
+                                    <a href="home.html">
+                                        <i class="ion ion-md-home"></i>
+                                    </a>
+                                </li>
+                                <li class="u-d-none-lg">
+                                    <a href="wishlist.html">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        <i class="ion ion-md-basket"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--Footer khi là tablet và mobile-->
+                        <div class="footer-mobile__BottomMenuBar-sc-1kqmbou-0 OAJXQ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="home.html">
+                                            <i class="fa fa-home fa-2x"></i>
+                                            <div class="text-menu--inactive text-menu--active">Trang chủ</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="wishlist.html">
+                                            <i class="far fa-heart"></i>
+                                            <div class="text-menu--inactive text-menu--active">Yêu thích</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="cart.html">
+                                            <i class="ion ion-md-basket" style="font-size: 25px;"></i>
+                                            <div class="text-menu--inactive text-menu--active">Giỏ hàng</div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="hoso.html">
+                                            <i class="fas fa-user"></i>
+                                            <div class="text-menu--inactive text-menu--active">Tài khoản</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Header giữa -->
+            <!-- Bottom-Header -->
+            <div class="full-layer-bottom-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="v-menu v-close">
+                                <span class="v-title v-close">
+                                    <i class="ion ion-md-menu"></i>
+                                    Danh mục sản phẩm
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                                <div class="v-wrapper">
+                                    <ul class="v-list animated fadeIn">
+                                        <li>
+                                            <a href="shop-sub-category-all.html">
+                                                Tất cả
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-com.html">
+                                                Cơm
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Phở
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bánh canh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Hủ tiếu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Miến
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì quảng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-banh-mi.html">
+                                                Bánh mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Đồ ăn tiện lợi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="bottom-nav g-nav d-none d-lg-block">
+                                <li>
+                                    <a href="shop-sub-category-giam-gia.html">Các món giảm giá</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="rate.html">Đánh giá</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <!-- Header /- -->
+        <!-- Main-Slider -->
+        <div class="default-height ph-item">
+            <div class="slider-main owl-carousel">
+                <div class="bg-image one">
+                    <div class="slide-content slide-animation">
+                        <h1>Food & Drink</h1>
+                        <h2>Quality is our recipe</h2>
+                    </div>
+                </div>
+                <div class="bg-image two">
+                    <div class="slide-content-2 slide-animation">
+                        <h2 class="slide-2-h2-a">Welcome</h2>
+                        <h2 class="slide-2-h2-b">To Canteen</h2>
+                        <h1></h1>
+                    </div>
+                </div>
+                <div class="bg-image three">
+                    <div class="slide-content slide-animation">
+                        <h1>
+                            Tech
+                            <span style="color:#333">Deals</span>
+                        </h1>
+                        <h2 style="color:#333">Deal siêu hời</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main-Slider /- -->
+        <!-- Men-Clothing -->
+        <section class="section-maker">
+            <div class="container">
+                <div class="sec-maker-header text-center">
+
+
+                    <span class="sec-maker-span-text"> CLOSED AT </span>
+                    <!-- Timing-Box -->
+                    <div class="section-timing-wrapper dynamic">
+                        <span class="fictitious-seconds" style="display:none;">18000</span>
+                        <div class="section-box-wrapper box-days">
+                            <div class="section-box">
+                                <span class="section-key">120</span>
+                                <span class="section-value">Days</span>
+                            </div>
+                        </div>
+                        <div class="section-box-wrapper box-hrs">
+                            <div class="section-box">
+                                <span class="section-key">54</span>
+                                <span class="section-value">HRS</span>
+                            </div>
+                        </div>
+                        <div class="section-box-wrapper box-mins">
+                            <div class="section-box">
+                                <span class="section-key">3</span>
+                                <span class="section-value">MINS</span>
+                            </div>
+                        </div>
+                        <div class="section-box-wrapper box-secs">
+                            <div class="section-box">
+                                <span class="section-key">32</span>
+                                <span class="section-value">SEC</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timing-Box /- -->
+                </div>
+                <div class="sec-maker-header text-center">
+                    <h3 class="sec-maker-h3">THỰC ĐƠN CANTEEN</h3>
+                    <ul class="nav tab-nav-style-1-a justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#men-latest-products">Thực đơn hôm nay</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#men-top-rating-products">Thực đơn ngày mai</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="wrapper-content">
+                    <div class="outer-area-tab">
+                        <div class="tab-content">
+                            <div class="tab-pane active show fade" id="men-latest-products">
+                                <div class="slider-fouc">
+                                    <div class="products-slider owl-carousel" data-item="4">
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product-com-rang-dua-bo-id01.html">
+                                                    <img class="img-fluid" src="https://barona.vn/storage/meo-vat/45/com-rang-dua-bo.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product-com-rang-dua-bo-id01.html">Cơm rang dưa bò</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        25.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        30.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tag new">
+                                                <span>NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product-bun-bo-hue-id02.html">
+                                                    <img class="img-fluid" src="https://product.hstatic.net/1000274502/product/bun-bo-hue-tai-nam-imom_d3683c4896874767b0fcf273ad34e0ab_master.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Bún bò Huế </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        30.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        35.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product-banh-canh-cua-id04.html">
+                                                    <img class="img-fluid" src="https://www.wokandkin.com/wp-content/uploads/2020/06/Banh-Canh-Cua-saved-for-web-500x500.png" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product-banh-canh-cua-id04.html">Bánh canh cua</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        28.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        30.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product-pho-tai-nam-id03.html">
+                                                    <img class="img-fluid" src="https://hanoitop10.com/wp-content/uploads/2023/01/hinh-anh-pho-bo_1.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Phở tái nạm</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        35.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        40.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tag new">
+                                                <span>NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473654jYu/hu-tieu-nam-vang-thanh-dat-949997.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Hú tiếu nam vang</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        32.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        35.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://vuanoitro.vn/wp-content/uploads/2021/12/Mi%E1%BA%BFn-x%C3%A0o-th%E1%BA%ADp-c%E1%BA%A9m-2-e1640666013369.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Miến xào thập cẩm</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        27.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        30.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://statics.vinpearl.com/com-ga-nha-trang-1_1632216660.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Cơm gà xé
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        26.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        30.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://static.vinwonders.com/production/bun-rieu-ngon-ha-noi-7.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Bún riêu cua
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        31.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        35.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="men-best-selling-products">
+                                <!-- Product Not Found -->
+                                <div class="product-not-found">
+                                    <div class="not-found">
+                                        <h2>SORRY!</h2>
+                                        <h6>There is not any product in specific catalogue.</h6>
+                                    </div>
+                                </div>
+                                <!-- Product Not Found /- -->
+                            </div>
+                            <div class="tab-pane fade" id="men-top-rating-products">
+                                <div class="slider-fouc">
+                                    <div class="products-slider owl-carousel" data-item="4">
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://pholyquocsu.vn/wp-content/uploads/2019/09/PhoTaiBap.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Phở bò tái </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        38.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        40.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://bepxua.vn/wp-content/uploads/2020/10/photo-4-1541391110962754679495.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Bánh canh ghẹ </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        29.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        35.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://comnieungonvungtau.com/wp-content/uploads/2023/03/hu-tieu-suon.webp" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Hủ tiếu sườn </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        33.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        38.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://cdn.alongwalk.info/vn/wp-content/uploads/2022/11/25221341/image-review-cac-quan-com-tam-ngon-o-can-tho-thuoc-top-dinh-cua-chop-166936402149105.png" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Cơm tấm
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        27.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        30.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="men-featured-products">
+                                <!-- Product Not Found -->
+                                <div class="product-not-found">
+                                    <div class="not-found">
+                                        <h2>SORRY!</h2>
+                                        <h6>There is not any product in specific catalogue.</h6>
+                                    </div>
+                                </div>
+                                <!-- Product Not Found /- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Men-Clothing-Timing-Section -->
+        <section class="section-maker">
+            <div class="container">
+
+                <div class="container">
+                    <div class="sec-maker-header text-center">
+                        <span class="sec-maker-span-text">Sản phẩm có sẵn hàng ngày của chúng tôi </span>
+                        <h3 class="sec-maker-h3 u-s-m-b-22">MÓN ĂN TIỆN LỢI</h3>
+
+                    </div>
+
+                </div>
+                <!-- Carousel -->
+                <div class="slider-fouc">
+                    <div class="products-slider owl-carousel" data-item="4">
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://cf.shopee.vn/file/7e79a401791c6115f0d453d2c484719d" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Cơm nắm </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        12.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        15.000
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://vcdn-dulich.vnecdn.net/2022/01/05/1-2617-1631006461-3611-1641376367.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Cơm cuộn Hàn Quốc</a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        20.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        25.000
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://mocviquan.vn/wp-content/uploads/2021/09/Mi-tron-long-dao_mocviquan.vn_.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Mì trộn trứng lòng đào </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        22.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        27.000
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://banhmihuynhhoa.vn/wp-content/uploads/2022/06/Screen-Shot-2022-06-04-at-18.34.07.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bánh bao thập cẩm</a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        28.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        35.000
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://hips.hearstapps.com/hmg-prod/images/delish-200511-seo-club-sandwich-h-14383-eb-1590780714.jpg?crop=0.671xw:1.00xh;0.123xw,0&resize=1200:*" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Sanwich</a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        18.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        22.000
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel /- -->
+            </div>
+        </section>
+        <div class="banner-image-view-more">
+            <div class="container">
+                <div class="image-banner u-s-m-y-40">
+                    <a href="shop-v1-root-category.html" class="mx-auto banner-hover effect-dark-opacity">
+                        <img class="img-fluid" src="images/banners/banner_tuoingon.png" alt="Banner Image">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Món mua nhiều -->
+        <section class="section-maker">
+            <div class="container">
+                <div class="container">
+                    <div class="sec-maker-header text-center">
+                        <span class="sec-maker-span-text"> Những món ăn làm nên thương hiệu của chúng tôi </span>
+                        <h3 class="sec-maker-h3 u-s-m-b-22">MÓN ĐƯỢC MUA NHIỀU </h3>
+
+                    </div>
+
+                </div>
+                <!-- Carousel -->
+                <div class="slider-fouc">
+                    <div class="products-slider owl-carousel" data-item="4">
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473916qkK/bo-kho-banh-mi-thanh-pham.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bánh mì bò kho </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(23)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        15.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        20.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://haisanxanh.com/uploads/images/cach-nau-bun-ca-ngu-dai-duong-ngon-chuan-vi.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bún cá </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(25)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        30.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        35.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://cdn.alongwalk.info/vn/wp-content/uploads/2022/11/25221341/image-review-cac-quan-com-tam-ngon-o-can-tho-thuoc-top-dinh-cua-chop-166936402149105.png" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Cơm tấm </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(25)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        27.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        35.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://paradisefood.vn/wp-content/uploads/2019/04/muc-xao-cay.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Cơm mực xào</a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 29 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(29)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        35.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        38.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-1492.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bánh canh cá lóc  </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(25)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        30.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        35.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://static.vinwonders.com/production/banh-mi-chao-hai-phong-1.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bánh mì chảo  </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 33 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(33)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        35.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        38.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://static.vinwonders.com/production/bun-cha-cau-giay-1.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Bún chả </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 44 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(44)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        34.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        38.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag hot">
+                                <span>HOT</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel /- -->
+            </div>
+        </section>
+
+        <section class="section-maker">
+            <div class="container">
+                <div class="container">
+                    <div class="sec-maker-header text-center">
+                        <span class="sec-maker-span-text"> Bộ đôi sinh viên thích mê </span>
+                        <h3 class="sec-maker-h3 u-s-m-b-22">MÌ - MIẾN </h3>
+
+                    </div>
+
+                </div>
+                <!-- Carousel -->
+                <div class="slider-fouc">
+                    <div class="products-slider owl-carousel" data-item="4">
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://vuanoitro.vn/wp-content/uploads/2021/12/Mi%E1%BA%BFn-x%C3%A0o-th%E1%BA%ADp-c%E1%BA%A9m-2-e1640666013369.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html"><Miến xào thập cẩm> </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 45 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(45)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        27.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        30.000
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://www.lottemart.vn/media/catalog/product/cache/0x0/0/4/0400249520008.jpg.webp" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Mì xào giòn </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 66 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(66)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        25.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        35.000
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://bonchon.com.vn/sites/default/files/xjapchae.jpg.pagespeed.ic.bXgPPo01yw.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Miến trộn  </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(25)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        26.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        30.000
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="item">
+                            <div class="image-container">
+                                <a class="item-img-wrapper-link" href="single-product.html">
+                                    <img class="img-fluid" src="https://product.hstatic.net/1000166699/product/mien_hai_san_74a7d3ccd980457eb8526014a89f11c9_master.jpg" alt="Product">
+                                </a>
+                                <div class="item-action-behaviors">
+
+
+                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a href="single-product.html">Miến xào hải sản </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="4.5 out of 5 - based on 29 Reviews">
+                                            <span style='width:67px'></span>
+                                        </div>
+                                        <span>(29)</span>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+                                    <div class="item-new-price">
+                                        27.000
+                                    </div>
+                                    <div class="item-old-price">
+                                        30.000
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Carousel /- -->
+            </div>
+        </section>
+        <!-- Men-Clothing /- -->
+        <!-- Women-Clothing -->
+        <section class="section-maker">
+            <div class="container">
+                <div class="sec-maker-header text-center">
+                    <span class="sec-maker-span-text">Bạn có khát không? Chúng tôi có nước mỗi ngày! </span>
+                    <h3 class="sec-maker-h3">NƯỚC GIẢI KHÁT </h3>
+                    <ul class="nav tab-nav-style-1-a justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#women-latest-products">Nước ngọt đóng chai</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#women-top-rating-products">Nước ép </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="wrapper-content">
+                    <div class="outer-area-tab">
+                        <div class="tab-content">
+                            <div class="tab-pane active show fade" id="women-latest-products">
+                                <div class="slider-fouc">
+                                    <div class="products-slider owl-carousel" data-item="4">
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://product.hstatic.net/200000078749/product/554_nuoc_tang_luc_sting_dau_tay_330ml_152cb4e2f12447b0bc2d61cb6a8b57a3_29149c7068554c10b62544c8030f3b6b.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            String
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tag new">
+                                                <span>NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://tea-3.lozi.vn/v1/ship/resized/losupply-quan-tan-phu-quan-tan-phu-ho-chi-minh-1618467447167540212-nuoc-ngot-coca-cola-lon-320ml-0-1626403242?w=480&type=o" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Coca Cola
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://img.ws.mms.shopee.vn/vn-11134201-7qukw-lf9ijvqgdh8q68" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Pepsi</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://img.sosanhgia.com/images/4cbda30027cf46e3b55e4efc4d103f99/nuoc-tang-luc-number-1.jpeg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Number 1</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tag new">
+                                                <span>NEW</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://gaogiahung.com/wp-content/uploads/2023/01/nuoc-number-1-3.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">nước suối</a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        5.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        7.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://bizweb.dktcdn.net/thumb/grande/100/469/765/products/7up.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            7Up
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://cf.shopee.vn/file/2b1bb5f956cb956a4d06b05d2461efa8" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Trà xanh không độ
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://tea-3.lozi.vn/v1/ship/resized/losupply-quan-tan-phu-quan-tan-phu-ho-chi-minh-1618467447167540212-tra-mat-ong-boncha-vi-tac-450mlx24-chai-6-1665636377?w=480&type=o" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Boncha
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                                            <span style='width:0'></span>
+                                                        </div>
+                                                        <span>(0)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        10.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        12.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tag discount">
+                                                <span>-15%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="women-best-selling-products">
+                                <!-- Product Not Found -->
+                                <div class="product-not-found">
+                                    <div class="not-found">
+                                        <h2>SORRY!</h2>
+                                        <h6>There is not any product in specific catalogue.</h6>
+                                    </div>
+                                </div>
+                                <!-- Product Not Found /- -->
+                            </div>
+                            <div class="tab-pane fade" id="women-top-rating-products">
+                                <div class="slider-fouc">
+                                    <div class="products-slider owl-carousel" data-item="4">
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://hutiuthanhdat.vn/data/Product/nuoc-cam-ep.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Nước ép cam </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        15.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        20.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://hutiuthanhdat.vn/data/Product/nuoc-ep-dua-hau-tao.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">
+                                                            Nước ép dưa hấu
+                                                        </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        15.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        20.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://hutiuthanhdat.vn/timthumb.php?src=data/Product/nuoc-ep-ca-rot.jpg&h=600&w=600&zc=1" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Nước ép cà rốt </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        15.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        20.000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image-container">
+                                                <a class="item-img-wrapper-link" href="single-product.html">
+                                                    <img class="img-fluid" src="https://product.hstatic.net/200000416879/product/nuoc-ep-oi-ngon-bo-duong-bepantamduc.vn_fa77cc9bd7e04b6bb294f11d7da3a82e_grande.jpg" alt="Product">
+                                                </a>
+                                                <div class="item-action-behaviors">
+
+                                                    <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                    <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                    <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="what-product-is">
+
+                                                    <h6 class="item-title">
+                                                        <a href="single-product.html">Nước ép ổi </a>
+                                                    </h6>
+                                                    <div class="item-stars">
+                                                        <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                            <span style='width:67px'></span>
+                                                        </div>
+                                                        <span>(23)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-template">
+                                                    <div class="item-new-price">
+                                                        15.000
+                                                    </div>
+                                                    <div class="item-old-price">
+                                                        20.000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="women-featured-products">
+                                <!-- Product Not Found -->
+                                <div class="product-not-found">
+                                    <div class="not-found">
+                                        <h2>SORRY!</h2>
+                                        <h6>There is not any product in specific catalogue.</h6>
+                                    </div>
+                                </div>
+                                <!-- Product Not Found /- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="banner-image-view-more">
+                <div class="container">
+                    <div class="image-banner u-s-m-y-40">
+                        <a href="shop-v1-root-category.html" class="mx-auto banner-hover effect-dark-opacity">
+                            <img class="img-fluid" src="images/banners/Banner_Nhanvien.png" alt="Banner Image">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+
+                <!-- Mid-Footer -->
+                <div class="mid-footer-wrapper u-s-p-b-80">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>CHĂM SÓC KHÁCH HÀNG</h6>
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li>
+                                        <a href="qldonhang.html">Theo dõi đơn hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-and-conditions.html">Điều khoản và điều kiện</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>VỀ CANTEEN FIRETECH</h6>
+                                <ul>
+                                    <li>
+                                        <a href="home.html">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>THÔNG TIN</h6>
+                                <ul>
+                                    <li>
+                                        <a href="store-directory.html">Danh mục món ăn</a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html">Món ăn yêu thích</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">Giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>Địa chỉ</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-location-arrow u-s-m-r-9"></i>
+                                        <span>Khu chức năng số 15 - Đô thị mới Nam Thành phố, xã Phong Phú, huyện Bình Chánh</span>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+84 444 898 222">
+                                            <i class="fas fa-phone u-s-m-r-9"></i>
+                                            <span>+84 444 898 222</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:firetech@ueh.edu.vn">
+                                            <i class="fas fa-envelope u-s-m-r-9"></i>
+                                            <span>
+                                                firetech@ueh.edu.vn
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mid-Footer /- -->
+                <!-- Bottom-Footer -->
+                <div class="bottom-footer-wrapper">
+                    <div class="social-media-wrapper">
+                        <ul class="social-media-list">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-rss"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright-text">
+                        Copyright &copy; 2018
+                        <a href="home.html">Canteen FireTech</a> All Right Reserved
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom-Footer /- -->
+        </footer>
+        <!-- Footer /- -->
+    </div>
+        <!-- app /- -->
+        <!--[if lte IE 9]>
+    <div class="app-issue">
+    <div class="vertical-center">
+        <div class="text-center">
+            <h1>You are using an outdated browser.</h1>
+            <span>This web app is not compatible with following browser. Please upgrade your browser to improve your security and experience.</span>
+        </div>
+    </div>
+    </div>
+    <style> #app {
+    display: none;
+    } </style>
+    <![endif]-->
+        <!-- NoScript -->
+        <noscript>
+            <div class="app-issue">
+                <div class="vertical-center">
+                    <div class="text-center">
+                        <h1>JavaScript is disabled in your browser.</h1>
+                        <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+                    </div>
+                </div>
+            </div>
+            <style>
+                #app {
+                    display: none;
+                }
+            </style>
+        </noscript>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <!-- Modernizr-JS -->
+        <script type="text/javascript" src="js/vendor/modernizr-custom.min.js"></script>
+        <!-- NProgress -->
+        <script type="text/javascript" src="js/nprogress.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Popper -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- ScrollUp -->
+        <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+        <!-- Elevate Zoom -->
+        <script type="text/javascript" src="js/jquery.elevatezoom.min.js"></script>
+        <!-- jquery-ui-range-slider -->
+        <script type="text/javascript" src="js/jquery-ui.range-slider.min.js"></script>
+        <!-- jQuery Slim-Scroll -->
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <!-- jQuery Resize-Select -->
+        <script type="text/javascript" src="js/jquery.resize-select.min.js"></script>
+        <!-- jQuery Custom Mega Menu -->
+        <script type="text/javascript" src="js/jquery.custom-megamenu.min.js"></script>
+        <!-- jQuery Countdown -->
+        <script type="text/javascript" src="js/jquery.custom-countdown.min.js"></script>
+        <!-- Owl Carousel -->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- Main -->
+        <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

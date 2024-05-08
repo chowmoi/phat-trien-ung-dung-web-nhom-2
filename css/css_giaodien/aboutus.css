@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+10.0 About-Page
+--------------------------------------------------------------*/
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s linear;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  .page-intro {
+    background-image: url("../images/pattern/AnhBia.jpg");
+    /* Thay thế bằng đường dẫn đến ảnh nền của bạn */
+    /*background-color: var(--dark-blue);*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    opacity: 0.9;
+  }
+  
+  .navigation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+  }
+  
+  .navigation a {
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  
+  .section__heading {
+    text-align: center;
+    font-weight: bold;
+    color: var(--light);
+    font-size: 45px;
+  }
+  
+  .sign {
+    color: var(--light);
+    font-size: 20px;
+  }
+  
+  .navigation>.nav {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 20px;
+  }
+  
+  .navigation>.nav:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 5px rgba(242, 242, 242, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  .title-text {
+    color: var(--orange);
+    font-weight: bold;
+  }
+  
+  .btn-aboutus {
+    background-color: var(--dark-blue);
+    color: var(--light);
+    border-radius: 6px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-aboutus:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    box-shadow: 0 0 10px #c1c0c0;
+    transform: scale(1.1);
+  }
+  
+  .welcome-text-4 {
+    border-bottom: 1.5px dotted var(--dark-blue);
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: 85%;
+  }
+  
+  .title-service_text {
+    color: var(--orange);
+    font-size: 35px;
+  }
+  
+  .title-service_text_2 {
+    color: rgb(83, 83, 83);
+    opacity: 0.9;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .page-about {
+    margin-top: 60px;
+    height: 470px;
+  }
+  
+  .service-content {
+    border: 2px solid #ffff opacity 0.8;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 27px 25px;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--dark-blue);
+    text-align: center;
+    background-color: white;
+  }
+  
+  .service-content:hover {
+    animation: bounce 0.7s ease-in-out infinite alternate;
+  }
+  
+  @keyframes bounce {
+  
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+  
+    50% {
+        transform: translateY(-7px);
+    }
+  }
+  
+  .icon {
+    color: var(--orange);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+  }
+  
+  .title-CTA-text{
+    font-size: 30px;
+    margin-top: 90px;
+    color: var(--orange);
+    font-weight: bold;
+  }
+  
+  .page-service{
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+  }
+  
+  .content-CTA{
+    margin-bottom: 100px;
+  }
+  
+  .container-fluid{
+    padding-right: var(--bs-gutter-x, .0);
+    padding-left: var(--bs-gutter-x, .0);
+  }
+  
+  .row{
+    display: flex;
+    margin-left: calc(-.0* var(--bs-gutter-x));
+  }
+  
+  .container{
+    padding-left: var(--bs-gutter-x, .0rem);
+  }
+  
+  
+  :root {
+    --dark-blue: #005f69;
+    --orange: #f26f33;
+    --dark: #000000;
+    --light: #ffff;
+    --grey: rgb(147, 149, 152);
+  }

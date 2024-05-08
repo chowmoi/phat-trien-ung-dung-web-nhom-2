@@ -1,0 +1,206 @@
+
+/*ĐĂNG NHẬP*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s linear;
+}
+
+body {
+    background: #ffffff;
+
+}
+
+.page-intro {
+    background-image: url("../images/pattern/AnhBia.jpg");
+    /* Thay thế bằng đường dẫn đến ảnh nền của bạn */
+    /*background-color: var(--dark-blue);*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    opacity: 0.9;
+    width: 100%;
+  }
+  
+  .navigation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+  }
+  
+  .navigation a {
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  
+  .section__heading {
+    text-align: center;
+    font-weight: bold;
+    color: var(--light);
+    font-size: 45px;
+  }
+  
+  .sign {
+    color: var(--light);
+    font-size: 20px
+  }
+  
+  .navigation>.nav {
+    text-decoration: none;
+    font-size: 20px
+  }
+  
+  .navigation>.nav:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 5px rgba(242, 242, 242, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+
+.login {
+    width: 500px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+}
+
+.login .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.login .content h2 {
+    font-size: 2em;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.login .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.login .content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid lightgrey;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 7px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.login .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.login .content .form .inputBox input:focus~i,
+.login .content .form .inputBox input:valid~i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.login .content .form .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .content .form .links a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+.login .content .form .links a:hover{
+    transform: translateY(-3px);
+    text-shadow: 0 0 3px rgba(162, 199, 175, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;  
+}
+
+.login .content .form .links a:nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+}
+.login .content .form .links a:nth-child(2):hover{
+    transform: translateY(-3px);
+    text-shadow: 0 0 3px rgba(199, 173, 140, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;   
+}
+
+.login .content .form .inputBox input[type="submit"] {
+    padding: 10px;
+    background: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.login .content .form .inputBox input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgba(113, 110, 106, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+input[type="submit"]:active {
+    opacity: 0.6;
+}
+
+.container-fluid{
+    padding-right: var(--bs-gutter-x, .0);
+    padding-left: var(--bs-gutter-x, .0);
+}
+
+.row{
+    display: flex;
+    margin-left: calc(-.0* var(--bs-gutter-x));
+}
+
+:root {
+    --dark-blue: #005F69;
+    --orange: #F26f33;
+    --dark: #000000;
+    --light: #ffff;
+    --grey: #f9f6ef;
+}

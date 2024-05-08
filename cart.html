@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Canteen FireTech -Giỏ hàng</title>
+    <!-- Standard Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href=" css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href=" css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href=" css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href=" css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href=" css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href=" css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href=" css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href=" css/bundle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .h1giohang {
+            text-align: center;
+            font-weight: 700;
+            font-family: "Times New Roman";
+            font-size: 30px;
+            color: rgb(227, 100, 20);
+            margin-top: 2rem;
+        }
+    
+        .banner-layer {
+            padding: 0px;
+        }
+    
+        .page-cart {
+            padding: 1rem;
+        }
+    
+        .Nhac-voucher {
+            background-color: #EEEDEB;
+            border: 1px solid rgb(227, 100, 20);
+            border-radius: 2px;
+            display: flex;
+            margin-bottom: .625rem;
+            padding: .75rem 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    
+        .route-box {
+            border: 1px solid rgb(227, 100, 20);
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            background-color: #EEEDEB;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 30px;
+            padding: 10px 32px 10px 5px;
+            font-weight: 800;
+            font-family: 'Times New Roman';
+        }  
+        .route-box__g1{
+            border-right: 1px solid rgb(227, 100, 20); /* Border bên phải */
+        }
+    
+        .route-box__g2 {
+            border-left: 1px solid rgb(227, 100, 20); /* Border bên trái */
+        }
+        
+    
+    
+    
+        .table-wrapper u-s-m-b-60 {
+            margin-bottom: 5px;
+            overflow-x: auto;
+            min-height: 0.01%;
+        }
+    
+        .u-s-m-b-60 {
+            margin-bottom: 0px;
+        }
+    
+        .empty-cart-msg td {
+            font-weight: 800;
+            color: #005f69;
+            text-align: center;
+        }
+    
+        #coupon-input-1:checked h6 {
+            font-weight: 500;
+        }
+    
+        .coupon-area {
+            font-weight: 500;
+        }
+    
+        .button-area {
+            border: 5px
+        }
+    
+        .Quantam {
+            text-align: center;
+            font-weight: 500;
+            margin: 30px;
+        }
+    
+        .fas {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            font-family: Font Awesome\ 5 Free;
+        }
+    
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .button-container {
+            padding-right: 50px;
+        }
+    
+    </style>
+    
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <!-- Header trên-->
+            <div class="full-layer-outer-header d-none d-lg-block">
+                <div class="container clearfix ">
+                    <div class="d-lg-block">
+                        <nav>
+                            <ul class="primary-nav g-nav ">
+                                <li>
+                                    <a href="tel:+84-444-898-222">
+                                        <i class="fas fa-phone u-c-brand u-s-m-r-9"></i>
+                                        Telephone: +84 444 989 222
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:firetech@ueh.edu.vn">
+                                        <i class="fas fa-envelope u-c-brand u-s-m-r-9"></i>
+                                        E-mail: firetech@ueh.edu.vn
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav>
+                        <ul class="secondary-nav g-nav">
+                            <li>
+                                <a>
+                                    Tài khoản
+                                    <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                                </a>
+
+                                <ul class="g-dropdown" style="width:200px">
+                                    <li>
+                                        <a href="hoso.html">
+                                            <i class="fas fa-cog u-s-m-r-9"></i>
+                                            Hồ sơ của tôi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="far fa-heart u-s-m-r-9"></i>
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html">
+                                            <i class="fas fa-sign-in-alt u-s-m-r-9"></i>
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Header trên/- -->
+            <!--Header giữa -->
+            <div class="full-layer-mid-header">
+                <div class="container">
+                    <div class="row clearfix align-items-center">
+                        <!--Logo-->
+                        <div class="col-lg-3 col-md-5 col-sm-5">
+                            <div class="brand-logo text-lg-center">
+                                <a href="home.html">
+                                    <img src="images/main-logo/Logo_CanTeen.png" alt="Fire Tech Logo" class="app-brand-logo"
+                                         width="189" height="63">
+                                </a>
+                            </div>
+                        </div>
+                        <!--Thanh tìm kiếm - DONE-->
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <form class="form-searchbox text-center">
+                                <label class="sr-only" for="search-landscape">Search</label>
+                                <input id="search-landscape" type="text" class="text-field" placeholder="Tìm món ăn">
+                                <div class="select-box-position">
+                                    <div class="select-box-wrapper select-hide">
+                                        <label class="sr-only" for="select-category">Choose category for search</label>
+                                        <select class="select-box" id="select-category">
+                                            <option selected="selected" value="">Tất cả</option>
+                                            <option value="">Cơm</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Phở</option>
+                                            <option value="">Bánh canh</option>
+                                            <option value="">Hủ tiếu</option>
+                                            <option value="">Gà rán</option>
+                                            <option value="">Miến</option>
+                                            <option value="">Bún</option>
+                                            <option value="">Mì</option>
+                                            <option value="">Mì quảng</option>
+                                            <option value="">Bánh mì</option>
+                                            <option value="">Đồ ăn tiện lợi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button id="btn-search" type="submit" class="button button-primary fas fa-search"></button>
+                            </form>
+                        </div>
+                        <!--Nhóm các icon-->
+                        <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                            <ul class="mid-nav g-nav">
+                                <li class="u-d-none-lg">
+                                    <a href="home.html">
+                                        <i class="ion ion-md-home"></i>
+                                    </a>
+                                </li>
+                                <li class="u-d-none-lg">
+                                    <a href="wishlist.html">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        <i class="ion ion-md-basket"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--Footer khi là tablet và mobile-->
+                        <div class="footer-mobile__BottomMenuBar-sc-1kqmbou-0 OAJXQ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="home.html">
+                                            <i class="fa fa-home fa-2x"></i>
+                                            <div class="text-menu--inactive text-menu--active">Trang chủ</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="wishlist.html">
+                                            <i class="far fa-heart"></i>
+                                            <div class="text-menu--inactive text-menu--active">Yêu thích</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="cart.html">
+                                            <i class="ion ion-md-basket" style="font-size: 25px;"></i>
+                                            <div class="text-menu--inactive text-menu--active">Giỏ hàng</div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-md-3">
+                                        <a class="menu-item" href="hoso.html">
+                                            <i class="fas fa-user"></i>
+                                            <div class="text-menu--inactive text-menu--active">Tài khoản</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Header giữa -->
+            <!-- Bottom-Header -->
+            <div class="full-layer-bottom-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="v-menu v-close">
+                                <span class="v-title v-close">
+                                    <i class="ion ion-md-menu"></i>
+                                    Danh mục sản phẩm
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                                <div class="v-wrapper">
+                                    <ul class="v-list animated fadeIn">
+                                        <li>
+                                            <a href="shop-sub-category-all.html">
+                                                Tất cả
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-com.html">
+                                                Cơm
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Phở
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bánh canh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Hủ tiếu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Miến
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Bún
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mì quảng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-sub-category-banh-mi.html">
+                                                Bánh mì
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Đồ ăn tiện lợi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="bottom-nav g-nav d-none d-lg-block">
+                                <li>
+                                    <a href="shop-sub-category-giam-gia.html">Các món giảm giá</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Liên hệ</a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="rate.html">Đánh giá</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header /- -->
+        <!-- app -->
+        <div id="app">
+
+            <!-- Tiêu đề giỏ hàng-->
+            <div class="page-style-a">
+                <div class="container">
+                    <div class="page-intro">
+                        <h2>Giỏ hàng</h2>
+                        <ul class="bread-crumb">
+                            <li class="has-separator">
+                                <i class="ion ion-md-home"></i>
+                                <a href="home.html">Trang chủ</a>
+                            </li>
+                            <li class="is-marked">
+                                <a href="cart.html">Giỏ hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Tiêu đề giỏ hàng-->
+            <!-- Cart-Page -->
+            <div class="page-cart u-s-p-t-80">
+                <div class="container">
+                    <div class="row">
+                        <!-- nhắc nhở sử dụng voucher -->
+                        <div class="Nhac-voucher" style="display: flex; justify-content: center; align-items: center; padding: 5px; margin:20px 0 0 12px;" bis_skin_checked="1">
+                            <img width="40" height="30" src="https://png.pngtree.com/png-clipart/20210523/original/pngtree-hot-sale-promo-for-ads-png-image_6329251.jpg" alt="fs-icon">
+                            <span class="UqssKR">*Nhấn vào mục Mã giảm giá ở cuối trang để hưởng ưu đãi siêu hot bạn nhé!!!</span>
+                        </div>
+
+                        <!-- nhắc nhở sử dụng voucher -->
+                        <div class="col-lg-12">
+
+                            <!-- Products-List-Wrapper -->
+                            <div class="table-wrapper u-s-m-b-60">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th style="color: rgb(227, 100, 20);">Món ăn</th>
+                                            <th style="color: rgb(227, 100, 20);">Giá</th>
+                                            <th style="color: rgb(227, 100, 20);">Số lượng</th>
+                                            <th>
+                                                <span class="button-container" style="padding: 0;">
+                                                    <button class="button undo fas fa-sync" style="color: rgb(227, 100, 20); margin: 7px; width: 40px; height: 30px"></button>
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="cart-anchor-image">
+                                                    <a href="single-product.html">
+                                                        <img src="https://barona.vn/storage/meo-vat/45/com-rang-dua-bo.jpg" alt="Product">
+                                                        <h6>Cơm Rang Dưa Bò</h6>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-price">
+                                                    25000đ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-quantity">
+                                                    <div class="quantity">
+                                                        <input type="text" class="quantity-text-field" value="1">
+                                                        <a class="plus-a" data-max="1000">&#43;</a>
+                                                        <a class="minus-a" data-min="1">&#45;</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="action-wrapper">
+                                                    <button class="button button-outline-secondary fas fa-trash"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="cart-anchor-image">
+                                                    <a href="single-product.html">
+                                                        <img src=" images/product/bun-bo-hue/1.png" alt="Product">
+                                                        <h6>Bún Bò Huế</h6>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-price">
+                                                    30000đ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-quantity">
+                                                    <div class="quantity">
+                                                        <input type="text" class="quantity-text-field" value="1">
+                                                        <a class="plus-a" data-max="1000">&#43;</a>
+                                                        <a class="minus-a" data-min="1">&#45;</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="action-wrapper">
+                                                    <button class="button button-outline-secondary fas fa-trash"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="cart-anchor-image">
+                                                    <a href="single-product.html">
+                                                        <img src=" images/product/pho-tai-nam/1.png" alt="Product">
+                                                        <h6>Phở Tái Nạm</h6>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-price">
+                                                    35000đ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-quantity">
+                                                    <div class="quantity">
+                                                        <input type="text" class="quantity-text-field" value="1">
+                                                        <a class="plus-a" data-max="1000">&#43;</a>
+                                                        <a class="minus-a" data-min="1">&#45;</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="action-wrapper">
+                                                    <button class="button button-outline-secondary fas fa-trash"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="cart-anchor-image">
+                                                    <a href="single-product.html">
+                                                        <img src=" images/product/banh-canh-cua/1.png" alt="Product">
+                                                        <h6>Bánh Canh Cua</h6>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-price">
+                                                    28000đ
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cart-quantity">
+                                                    <div class="quantity">
+                                                        <input type="text" class="quantity-text-field" value="1">
+                                                        <a class="plus-a" data-max="1000">&#43;</a>
+                                                        <a class="minus-a" data-min="1">&#45;</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="action-wrapper">
+                                                    <button class="button button-outline-secondary fas fa-trash"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="empty-cart-msg" style="display: none;">
+                                            <td colspan="4">Giỏ hàng trống!!!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="nut_dieu_huong">
+                                <div class="route-box">
+                                    <div class="route-box__g1">
+                                        <!--Nút tiếp tục mua sắm trở lại trang danh mục tên shop-side-version-2.html -->
+                                        <!--Ký hiệu mũi tên chỉ sang trái (fa-long-arrow-alt-left) lấy từ Font Awesome-->
+                                        <a class="route-box__link" href="shop-side-version-2.html">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+
+                                            <span>TIẾP TỤC MUA SẮM</span>
+                                        </a>
+                                    </div>
+                                    <div class="route-box__g2">
+                                        <!--Nút Xóa giỏ hàng link tới trang cart.html và có ký hiệu thùng rác (fa-trash)-->
+                                        <a class="route-box__link" href="cart.html">
+                                            <i class="fas fa-trash"></i>
+                                            <span>XÓA GIỎ HÀNG</span>
+
+                                        </a>
+                                        <!--Nút Cập nhật giỏ hàng link tới trang cart.html và có ký hiệu vòng tuần hoàn (fa-sync)-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon-continue-checkout u-s-m-b-60">
+                                <h6>FireTech Canteen Voucher:</h6> <!-- Tiêu đề mới được thêm vào đây -->
+                                <!-- Radio buttons for choosing voucher type -->
+                                <div class="voucher-options">
+                                    <input type="radio" id="voucher-type-input" name="voucher-type" value="input" onclick="toggleVoucherInput()"> <!-- Radio button for entering voucher code -->
+                                    <label for="voucher-type-input">Nhập mã Voucher</label><br>
+                                    <input type="radio" id="voucher-type-select" name="voucher-type" value="select" onclick="toggleVoucherSelect()"> <!-- Radio button for selecting from available vouchers -->
+                                    <label for="voucher-type-select">Chọn voucher có sẵn</label><br>
+                                </div>
+
+                                <!-- Section for entering voucher code -->
+                                <div id="voucher-input" style="display:none;">
+                                    <div class="coupon-area">
+                                        <h6>Nhập mã khuyến mãi tại đây:</h6> <!-- Tiêu đề nhập mã voucher -->
+                                        <div class="coupon-field">
+                                            <label class="sr-only" for="voucher-code">Nhập mã</label>
+                                            <input id="voucher-code" type="text" class="text-field" placeholder="Nhập mã">
+                                            <button type="submit" class="button">Áp mã</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Section for selecting from available vouchers -->
+                                <div id="voucher-select" style="display:none;">
+                                    <!-- Sửa style display thành none để ẩn ban đầu -->
+                                    <div class="o-summary__section u-s-m-b-30">
+                                        <div class="o-summary__box">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="c-f u-s-m-b-16">
+                                                        <label>
+                                                            <input type="checkbox" id="discount-option-1" name="discount-options" onclick="updateDiscountCheckboxes('discount-option-1')">
+                                                            Giảm 15.000 đồng (Còn 10 lần sử dụng)
+                                                        </label>
+                                                        <br>
+                                                        <label>
+                                                            <input type="checkbox" id="discount-option-2" name="discount-options" onclick="updateDiscountCheckboxes('discount-option-2')">
+                                                            Giảm 8% (Còn 5 lần sử dụng)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Phần JavaScript -->
+                                <script>
+                                    // Hàm để chuyển đổi hiển thị giữa phần nhập mã voucher và phần chọn voucher có sẵn
+                                    function toggleVoucherInput() {
+                                        var voucherInput = document.getElementById('voucher-input');
+                                        var voucherSelect = document.getElementById('voucher-select');
+
+                                        // Hiển thị phần nhập mã voucher
+                                        voucherInput.style.display = 'block';
+                                        // Ẩn phần chọn voucher có sẵn
+                                        voucherSelect.style.display = 'none';
+                                        // Bỏ chọn radio button chọn voucher có sẵn
+                                        document.getElementById('voucher-type-select').checked = false;
+                                    }
+
+                                    // Hàm để chuyển đổi hiển thị giữa phần chọn voucher có sẵn và phần nhập mã voucher
+                                    function toggleVoucherSelect() {
+                                        var voucherSelect = document.getElementById('voucher-select');
+                                        var voucherInput = document.getElementById('voucher-input');
+
+                                        // Hiển thị phần chọn voucher có sẵn
+                                        voucherSelect.style.display = 'block';
+                                        // Ẩn phần nhập mã voucher
+                                        voucherInput.style.display = 'none';
+                                        // Bỏ chọn radio button nhập mã voucher
+                                        document.getElementById('voucher-type-input').checked = false;
+                                    }
+
+                                    // Hàm để kiểm tra checkbox đảm bảo chỉ được chọn 1
+                                    function updateDiscountCheckboxes(selectedOption) {
+                                        // Lấy ra cả hai checkbox
+                                        var checkbox1 = document.getElementById('discount-option-1');
+                                        var checkbox2 = document.getElementById('discount-option-2');
+
+                                        // Nếu checkbox 1 được chọn, bỏ chọn checkbox 2
+                                        if (selectedOption === 'discount-option-1' && checkbox1.checked) {
+                                            checkbox2.checked = false;
+                                        }
+                                        // Nếu checkbox 2 được chọn, bỏ chọn checkbox 1
+                                        else if (selectedOption === 'discount-option-2' && checkbox2.checked) {
+                                            checkbox1.checked = false;
+                                        }
+                                    }
+                                </script>
+
+                                <div class="button-area">
+                                    <a href="shop-v1-root-category.html" class="continue">Tiếp tục chọn món</a>
+                                    <a href="checkout.html" class="checkout">Đến trang đơn hàng</a>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Products-List-Wrapper /- -->
+                            <!-- Coupon -->
+
+
+                        </div>
+                        <!-- Coupon /- -->
+                        <!-- Billing -->
+                        <div class="calculation u-s-m-b-60">
+                            <div class="table-wrapper-2">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Giá trị giỏ hàng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3 class="calc-h3 u-s-m-b-0">Tổng</h3>
+                                            </td>
+
+                                            <td>
+                                                <span class="calc-text">118.000đ</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <h3 class="calc-h3 u-s-m-b-1">Giảm giá</h3>
+                                            </td>
+
+                                            <td>
+                                                <span class="calc-text">118.000đ</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr style="color:red;">
+                                            <td>
+                                                <h3 class="calc-h3 u-s-m-b-2" style="color:red;">Tạm tính</h3>
+                                            </td>
+
+                                            <td>
+                                                <span class="calc-text">118.000đ</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                        <!-- Billing /- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart-Page /- -->
+        <!-- CÓ THỂ BẠN SẼ THÍCH/-->
+        <section class="section-maker">
+            <div class="container">
+                <div class="container">
+                    <div class="sec-maker-header text-center">
+                        <h3 class="sec-maker-h3 u-s-m-b-22">CÓ THỂ BẠN SẼ THÍCH</h3>
+
+                    </div>
+
+                </div>
+                <!-- Carousel -->
+                <div>
+                    <div class="products-slider owl-carousel owl-loaded owl-drag" data-item="4">
+
+
+
+
+
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2170px;">
+                                <div class="owl-item active" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473916qkK/bo-kho-banh-mi-thanh-pham.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bánh mì bò kho </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(23)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    15.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    20.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item active" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://haisanxanh.com/uploads/images/cach-nau-bun-ca-ngu-dai-duong-ngon-chuan-vi.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bún cá </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(25)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    30.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    35.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item active" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://cdn.alongwalk.info/vn/wp-content/uploads/2022/11/25221341/image-review-cac-quan-com-tam-ngon-o-can-tho-thuoc-top-dinh-cua-chop-166936402149105.png" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Cơm tấm </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(25)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    27.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    35.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://paradisefood.vn/wp-content/uploads/2019/04/muc-xao-cay.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Cơm mực xào</a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 29 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(29)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    35.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    38.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-1492.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bánh canh cá lóc  </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 23 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(25)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    30.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    35.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://static.vinwonders.com/production/banh-mi-chao-hai-phong-1.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bánh mì chảo  </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 33 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(33)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    35.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    38.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div><div class="owl-item" style="width: 310px;">
+                                    <div class="item">
+                                        <div class="image-container">
+                                            <a class="item-img-wrapper-link" href="single-product.html">
+                                                <img class="img-fluid" src="https://static.vinwonders.com/production/bun-cha-cau-giay-1.jpg" alt="Product">
+                                            </a>
+                                            <div class="item-action-behaviors">
+                                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                                                    Quick Look
+                                                </a>
+                                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                                <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                                <a class="item-addCart" href="javascript:void(0)">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="what-product-is">
+
+                                                <h6 class="item-title">
+                                                    <a href="single-product.html">Bún chả </a>
+                                                </h6>
+                                                <div class="item-stars">
+                                                    <div class="star" title="4.5 out of 5 - based on 44 Reviews">
+                                                        <span style="width:67px"></span>
+                                                    </div>
+                                                    <span>(44)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price-template">
+                                                <div class="item-new-price">
+                                                    34.000
+                                                </div>
+                                                <div class="item-old-price">
+                                                    38.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag hot">
+                                            <span>HOT</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="owl-nav"><div class="product-slider-previous"><i class="fas fa-angle-left"></i></div><div class="product-slider-next"><i class="fas fa-angle-right"></i></div></div><div class="owl-dots disabled"></div>
+                    </div>
+                </div>
+                <!-- Carousel /- -->
+            </div>
+
+        </section>
+        <!-- CÓ THỂ BẠN SẼ THÍCH/-->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+
+                <!-- Mid-Footer -->
+                <div class="mid-footer-wrapper u-s-p-b-80">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>CHĂM SÓC KHÁCH HÀNG</h6>
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li>
+                                        <a href="qldonhang.html">Theo dõi đơn hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-and-conditions.html">Điều khoản và điều kiện</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>VỀ CANTEEN FIRETECH</h6>
+                                <ul>
+                                    <li>
+                                        <a href="home.html">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>THÔNG TIN</h6>
+                                <ul>
+                                    <li>
+                                        <a href="store-directory.html">Danh mục món ăn</a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html">Món ăn yêu thích</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">Giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-list">
+                                <h6>Địa chỉ</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-location-arrow u-s-m-r-9"></i>
+                                        <span>Khu chức năng số 15 - Đô thị mới Nam Thành phố, xã Phong Phú, huyện Bình Chánh</span>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+84 444 898 222">
+                                            <i class="fas fa-phone u-s-m-r-9"></i>
+                                            <span>+84 444 898 222</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:firetech@ueh.edu.vn">
+                                            <i class="fas fa-envelope u-s-m-r-9"></i>
+                                            <span>
+                                                firetech@ueh.edu.vn
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mid-Footer /- -->
+                <!-- Bottom-Footer -->
+                <div class="bottom-footer-wrapper">
+                    <div class="social-media-wrapper">
+                        <ul class="social-media-list">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-rss"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright-text">
+                        Copyright &copy; 2018
+                        <a href="home.html">Canteen FireTech</a> All Right Reserved
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom-Footer /- -->
+        </footer>
+        <!-- Footer /- -->
+        <!-- Dummy Selectbox -->
+        <div class="select-dummy-wrapper">
+            <select id="compute-select">
+                <option id="compute-option">All</option>
+            </select>
+        </div>
+        <!-- Dummy Selectbox /- -->
+        <!-- Responsive-Search -->
+        <div class="responsive-search-wrapper">
+            <button type="button" class="button ion ion-md-close" id="responsive-search-close-button"></button>
+            <div class="responsive-search-container">
+                <div class="container">
+                    <p>Start typing and press Enter to search</p>
+                    <form class="responsive-search-form">
+                        <label class="sr-only" for="search-text">Search</label>
+                        <input id="search-text" type="text" class="responsive-search-field" placeholder="PLEASE SEARCH">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Responsive-Search /- -->
+    <!-- app /- -->
+    <!--[if lte IE 9]>
+    <div class="app-issue">
+        <div class="vertical-center">
+            <div class="text-center">
+                <h1>You are using an outdated browser.</h1>
+                <span>This web app is not compatible with following browser. Please upgrade your browser to improve your security and experience.</span>
+            </div>
+        </div>
+    </div>
+    <style> #app {
+        display: none;
+    } </style>
+    <![endif]-->
+    <!-- NoScript -->
+    <noscript>
+        <div class="app-issue">
+            <div class="vertical-center">
+                <div class="text-center">
+                    <h1>JavaScript is disabled in your browser.</h1>
+                    <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            #app {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <!-- Modernizr-JS -->
+    <script type="text/javascript" src=" js/vendor/modernizr-custom.min.js"></script>
+    <!-- NProgress -->
+    <script type="text/javascript" src=" js/nprogress.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src=" js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src=" js/bootstrap.min.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src=" js/popper.min.js"></script>
+    <!-- ScrollUp -->
+    <script type="text/javascript" src=" js/jquery.scrollUp.min.js"></script>
+    <!-- Elevate Zoom -->
+    <script type="text/javascript" src=" js/jquery.elevatezoom.min.js"></script>
+    <!-- jquery-ui-range-slider -->
+    <script type="text/javascript" src=" js/jquery-ui.range-slider.min.js"></script>
+    <!-- jQuery Slim-Scroll -->
+    <script type="text/javascript" src=" js/jquery.slimscroll.min.js"></script>
+    <!-- jQuery Resize-Select -->
+    <script type="text/javascript" src=" js/jquery.resize-select.min.js"></script>
+    <!-- jQuery Custom Mega Menu -->
+    <script type="text/javascript" src=" js/jquery.custom-megamenu.min.js"></script>
+    <!-- jQuery Countdown -->
+    <script type="text/javascript" src=" js/jquery.custom-countdown.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src=" js/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src=" js/app.js"></script>
+
+    <script>
+        < script >
+        // Hàm tính tổng tiền
+        // Gắn sự kiện change vào các trường số lượng
+        $('.quantity-text-field').on('change', function () {
+            // Tính lại tổng tiền cho sản phẩm hiện tại
+            var row = $(this).closest('tr');
+            var priceText = row.find('.cart-price').text();
+            var price = parseFloat(priceText.replace('đ', '').trim().replace(',', ''));
+            var quantity = parseInt($(this).val());
+            var subTotal = price * quantity;
+
+            // Hiển thị tổng tiền cho sản phẩm hiện tại
+            row.find('.sub-total').text(subTotal.toLocaleString() + 'đ');
+
+            // Tính lại tổng tổng tiền và cập nhật lên giao diện
+            var total = 0;
+            $('.sub-total').each(function () {
+                var subTotalText = $(this).text();
+                var subTotalValue = parseFloat(subTotalText.replace('đ', '').trim().replace(',', ''));
+                total += subTotalValue;
+            });
+            $('.calc-text').text(total.toLocaleString() + 'đ');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Biến lưu trữ danh sách các hành động xóa đã thực hiện
+            let deletedActions = [];
+
+            // Bắt sự kiện khi nhấn vào nút thùng rác
+            $(document).on('click', '.action-wrapper button', function (event) {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của nút
+
+                // Lưu trữ dòng sản phẩm bị xóa
+                let deletedRow = $(this).closest('tr');
+
+                // Lưu trữ hành động xóa vào biến danh sách
+                let action = {
+                    type: 'delete', // Loại hành động (xóa sản phẩm)
+                    row: deletedRow.clone() // Dòng sản phẩm bị xóa
+                };
+                deletedActions.push(action); // Lưu trữ hành động xóa
+
+                // Hiển thị hộp thoại xác nhận
+                let confirmed = confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
+
+                // Nếu người dùng đồng ý, thực hiện xóa dòng sản phẩm
+                if (confirmed) {
+                    deletedRow.remove(); // Xóa dòng sản phẩm chứa nút thùng rác mà người dùng đã nhấn
+                    checkEmptyCart(); // Kiểm tra nếu giỏ hàng trống và hiển thị thông báo tương ứng
+                }
+            });
+
+            // Bắt sự kiện khi nhấn vào liên kết "XÓA GIỎ HÀNG"
+            $('.route-box__link').on('click', function (event) {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+
+                // Hiển thị hộp thoại xác nhận xóa toàn bộ giỏ hàng
+                let confirmed = confirm("Bạn có chắc chắn muốn xóa toàn bộ giỏ hàng không?");
+
+                // Nếu người dùng đồng ý, thực hiện xóa toàn bộ giỏ hàng
+                if (confirmed) {
+                    // Lưu trữ hành động xóa toàn bộ giỏ hàng vào biến danh sách
+                    let action = {
+                        type: 'deleteAll', // Loại hành động (xóa toàn bộ giỏ hàng)
+                        rows: $('.table-wrapper tbody tr').not('.empty-cart-msg').clone() // Danh sách các dòng sản phẩm bị xóa
+                    };
+                    deletedActions.push(action); // Lưu trữ hành động xóa toàn bộ giỏ hàng
+
+                    // Xóa hết tất cả các hàng sản phẩm trên bảng sản phẩm
+                    $('.table-wrapper tbody tr').not('.empty-cart-msg').remove();
+
+                    // Hiển thị thông báo giỏ hàng trống
+                    $('.empty-cart-msg').show();
+                }
+            });
+
+            // Bắt sự kiện khi nhấn nút "Hoàn tác"
+            $('.button.undo').on('click', function () {
+                if (deletedActions.length > 0) {
+                    // Lấy ra hành động cuối cùng đã thực hiện
+                    let lastAction = deletedActions.pop();
+
+                    if (lastAction.type === 'delete') {
+                        // Nếu hành động là xóa sản phẩm, chèn lại dòng sản phẩm đã xóa vào bảng sản phẩm
+                        $('.empty-cart-msg').before(lastAction.row);
+                    } else if (lastAction.type === 'deleteAll') {
+                        // Nếu hành động là xóa toàn bộ giỏ hàng, chèn lại toàn bộ danh sách sản phẩm đã xóa vào bảng sản phẩm
+                        $('.empty-cart-msg').before(lastAction.rows);
+                    }
+
+                    // Kiểm tra nếu giỏ hàng không còn trống thì ẩn thông báo giỏ hàng trống
+                    checkEmptyCart();
+                }
+            });
+
+            // Hàm kiểm tra nếu giỏ hàng trống và hiển thị thông báo tương ứng
+            function checkEmptyCart() {
+                if ($('.table-wrapper tbody tr').length <= 1) { // Số lượng dòng trong giỏ hàng (trừ dòng thông báo) là 1 hoặc ít hơn, tức là giỏ hàng trống
+                    $('.empty-cart-msg').show(); // Hiển thị dòng thông báo "Giỏ hàng trống"
+                } else {
+                    $('.empty-cart-msg').hide(); // Ẩn dòng thông báo nếu có ít nhất một dòng sản phẩm trong giỏ hàng
+                }
+            }
+        });
+
+
+        $(document).ready(function () {
+            // Bắt sự kiện khi nhấn vào nút tăng số lượng
+            $(document).on('click', '.plus-a', function () {
+                let quantityField = $(this).siblings('.quantity-text-field');
+                let currentValue = parseInt(quantityField.val());
+                let maxValue = parseInt(quantityField.data('max'));
+
+                // Kiểm tra giá trị hiện tại có nhỏ hơn giá trị tối đa hay không
+                if (currentValue < maxValue) {
+                    quantityField.val(currentValue + 1); // Tăng giá trị lên 1 đơn vị
+                }
+            });
+
+            // Bắt sự kiện khi nhấn vào nút giảm số lượng
+            $(document).on('click', '.minus-a', function () {
+                let quantityField = $(this).siblings('.quantity-text-field');
+                let currentValue = parseInt(quantityField.val());
+                let minValue = parseInt(quantityField.data('min'));
+
+                // Kiểm tra giá trị hiện tại có lớn hơn giá trị tối thiểu hay không
+                if (currentValue > minValue) {
+                    quantityField.val(currentValue - 1); // Giảm giá trị đi 1 đơn vị
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            // Biến lưu trữ giá trị giảm giá từ voucher
+            var discountValue = 0;
+
+            // Bắt sự kiện khi chọn checkbox giảm giá
+            $('input[name="discount-options"]').on('change', function () {
+                // Lấy giá trị giảm giá từ checkbox được chọn
+                var discountOption = $(this).val();
+
+                // Cập nhật giá trị giảm giá dựa trên option được chọn
+                if (discountOption === 'discount-option-1') {
+                    discountValue = 15000; // Giảm 15.000 đồng
+                } else if (discountOption === 'discount-option-2') {
+                    // Giảm 8% của tổng giá trị sản phẩm
+                    var totalValue = parseFloat($('.calc-h3.u-s-m-b-1 .calc-text').text().replace('đ', '').trim().replace(',', ''));
+                    discountValue = totalValue * 0.08;
+                }
+
+                // Hiển thị giá trị giảm giá ngay khi checkbox được thay đổi
+                $('.calc-h3.u-s-m-b-1 .calc-text').text(discountValue.toLocaleString() + 'đ');
+
+                // Tính lại tổng giá trị giỏ hàng
+                calculateTotal();
+            });
+
+            // Hàm tính tổng giá trị giỏ hàng
+            function calculateTotal() {
+                var subTotal = 0;
+                $('.sub-total').each(function () {
+                    var subTotalText = $(this).text();
+                    var subTotalValue = parseFloat(subTotalText.replace('đ', '').trim().replace(',', ''));
+                    subTotal += subTotalValue;
+                });
+
+                // Tính tổng giá trị giỏ hàng
+                var total = subTotal - discountValue;
+
+                // Hiển thị tổng giá trị giỏ hàng
+                $('.calc-h3.u-s-m-b-2 .calc-text').text(total.toLocaleString() + 'đ');
+            }
+
+            // Gọi hàm tính tổng giá trị giỏ hàng khi số lượng sản phẩm thay đổi
+            $('.quantity-text-field').on('change', function () {
+                calculateTotal();
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>
+
+
+

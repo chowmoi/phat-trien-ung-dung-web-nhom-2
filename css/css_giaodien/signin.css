@@ -1,0 +1,170 @@
+
+/*ĐĂNG KÝ TÀI KHOẢN*/
+
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s linear;
+  }
+  
+  body {
+    background: #ffffff;
+  
+  }
+  
+  .page-intro {
+    background-image: url("../images/pattern/AnhBia.jpg");
+    /* Thay thế bằng đường dẫn đến ảnh nền của bạn */
+    /*background-color: var(--dark-blue);*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    opacity: 0.9;
+    width: 100%;
+  }
+  
+  .navigation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+  }
+  
+  .navigation a {
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  
+  .section__heading {
+    text-align: center;
+    font-weight: bold;
+    color: var(--light);
+    font-size: 45px;
+  }
+  
+  .sign {
+    color: var(--light);
+    font-size: 20px
+  }
+  
+  .navigation>.nav {
+    text-decoration: none;
+    font-size: 20px
+  }
+  
+  .navigation>.nav:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 5px rgba(242, 242, 242, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  .signin {
+    width: 600px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  }
+  
+  .signin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .signin .content h2 {
+    font-size: 2em;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .signin .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+  }
+  
+  .signin .content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid lightgrey;
+    outline: none;
+    padding: 16px 10px 16px;
+    border-radius: 7px;
+    color: #6d6d6d;
+    font-weight: 500;
+    font-size: 1em;
+  }
+  
+  #gender{
+  color: #6d6d6d;
+  border: 2px solid lightgrey;
+  background: #ffffff;
+  width: 100%;
+  border-radius: 7px;
+  font-weight: 500;
+  padding: 16px 0px 16px 10px;
+  }
+  
+  .signin .content .form .inputBox input[type="submit"] {
+    padding: 10px;
+    background: var(--orange);
+    color: white;
+    font-weight: bold;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+  
+  .signin .content .form .inputBox input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgba(113, 110, 106, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 0.6;
+  }
+  
+  .container-fluid{
+    padding-right: var(--bs-gutter-x, .0);
+    padding-left: var(--bs-gutter-x, .0);
+  }
+  
+  .row{
+    display: flex;
+    margin-left: calc(-.0* var(--bs-gutter-x));
+  }
+  
+  :root {
+    --dark-blue: #005F69;
+    --orange: #F26f33;
+    --dark: #000000;
+    --light: #ffff;
+    --grey: #f9f6ef;
+  }

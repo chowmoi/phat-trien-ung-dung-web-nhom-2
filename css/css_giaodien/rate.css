@@ -1,0 +1,238 @@
+/*ĐÁNH GIÁ KHÁCH HÀNG*/
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  
+  .page-content {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+
+  
+  .navigation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+  }
+  
+  .navigation a {
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  
+  .section__heading {
+    text-align: center;
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 45px;
+  }
+  
+  .title{
+    font-size: 33px;
+    color: #F26f33;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  .page-faq{
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top:60px;
+  }
+  .sign {
+    color: var(--light);
+  }
+  
+  .navigation>.nav {
+    text-decoration: none;
+    font-size: 20px
+  }
+  
+  .navigation>.nav:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 5px rgba(242, 242, 242, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  .introduce {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .contact-o__wrap {
+    position: relative;
+    
+  }
+  
+  
+  .contact-o__info-text-1 {
+    /* padding-left: 5%;
+    text-align: left; */
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: none;
+    color: black;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 7px;
+    padding: auto;
+  }
+  
+  .contact-o__info-text-2 {
+    padding-left: 5%;
+    text-align: left; 
+    font-size: 15px;
+    text-transform: none;
+    color: black;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 7px;
+    font-style: italic;
+  }
+  
+  .contact-o__info-text-3 {
+    padding-left: 5%;
+    text-align: left; 
+    font-size: 15px;
+    text-transform: none;
+    color: #5d5d5d;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 7px;
+    font-style: italic;
+  }
+
+.contact-o {
+    text-align: center;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 30px 0px;
+    transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: 2px solid #f5f5f5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /*box-shadow: 0 6px 15px 0 rgba(36, 37, 38, 0.08);*/
+}
+    .contact-o:hover {
+        animation: bounce 0.7s ease-in-out infinite alternate;
+    }
+    
+    @keyframes bounce {
+    
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(-7px);
+        }
+    }
+  
+  .hour {
+    text-align: right;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: none;
+  }
+  
+  :root {
+    --dark-blue: #005F69;
+    --orange: #F26f33;
+    --dark: #000000;
+    --light: #ffff;
+    --grey: #f9f6ef;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+    padding: 0 5px;
+    color: #ccc;
+  }
+  
+  .rating input:checked + label {
+    color: #f00;
+  }
+  
+  .fa-star {
+    color:#F26f33;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  
+  .image-to-enlarge {
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  .image-to-enlarge:hover {
+    transform: scale(1.5);
+  }
+  
+  }
+  .row col-lg-4,
+  .col-md-6 {
+      margin-bottom: 20px; /* Điều chỉnh khoảng cách dưới giữa các cột */
+  }
+   /* CSS cho phân trang */
+    /* CSS cho phân trang */
+    .pagination {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      justify-content: center; /* Để căn giữa */
+      margin-top: 20px; /* Lùi xuống một chút */
+  
+  }
+  .pagination li {
+      margin-right: 5px;
+  }
+  .pagination li a {
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #7b3718;
+      border-radius: 5px;
+      background-color: #ffffff;
+      transition: background-color 0.3s;
+  }
+  .pagination li a:hover {
+      background-color: #f3b69a; /* Màu khi hover */
+  }
+  .pagination li.active a {
+      background-color: #ffffff;
+      color: #F26f33; /* Màu chữ cho trang active */
+  }
+  

@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Canteen FireTech - Quản lý đơn hàng</title>
+    <!-- Ảnh Shortcut -->
+    <link href="images/logo1x1.png" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href="css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="css/bundle.css"><link rel="stylesheet" href="css/css_giaodien/qldonhang.css">
+</head>
+<body>
+    <div class="page-style-a">
+        <div class="container-fluid">
+            <div class="page-intro">
+                <h1 class="section__heading">Tài khoản</h1>
+                <ul class="bread-crumb">
+                    <span class="navigation" style="margin-top:12px;">
+                        <span class="nav">
+                            <i class="fas fa-home" style="font-size: 20px; color: white; display: flex; align-items: center; justify-content: center;"></i>
+                            <a style="color: white; text-decoration: none;" href="home.html">Trang Chủ</a>
+                        </span>
+                        <span class="sign"> /</span>
+                        <a class="nav" href="hoso.html" style="color:#F26f33">Tài khoản</a>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="u-s-p-b-60">
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="dash">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-12 col-sm-12">
+                            <!--====== Dashboard Features ======-->
+                            <!-- MENU ĐIỀU HƯỚNG CỦA TRANG TÀI KHOẢN -->
+                            <div class="dash__box">
+                                <div class="dash__pad-1">
+                                    <div class="dash__f-list">
+                                        <div class="function">Chức năng</div>
+                                        <div class="function-content"><a class="dash-active" href="hoso.html"><i class="fas fa-user-circle"></i> Hồ sơ</a></div>                                                                              
+                                        <div class="function-content"><a class="dash-active main" href="qldonhang.html"><i class="fas fa-shopping-cart"></i> Đơn hàng của tôi</a></div>
+                                        <div class="function-content"><a class="dash-active" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></div>
+                                        <div class="function-content"><a class="dash-active" href="daxem.html"><i class="fas fa-eye"></i> Đã xem</a></div>                                     
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ĐƠN ĐẶT, ĐƠN HUỶ, WISHLIST -->
+                            <div class="dash__box dash__box--bg-white dash__box--shadow dash__box--w">
+                                <div class="dash__pad-1">
+                                    <ul class="dash__w-list">
+                                        <li>
+                                            <div class="dash__w-wrap" style="margin-top:18px">
+
+                                                <div class="dash__w-icon dash__w-icon-style-1"><i class="fas fa-cart-arrow-down"></i></div>
+
+                                                <div class="dash__w-text">4</div>
+
+                                                <span class="dash__w-name">Đơn đặt</span>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash__w-wrap donhuy">
+
+                                                <div class="dash__w-icon dash__w-icon-style-2"><i class="fas fa-times"></i></div>
+
+                                                <div class="dash__w-text">0 </div>
+                                                
+                                                <span class="dash__w-name">Đơn huỷ</span>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash__w-wrap">
+
+                                                <div class="dash__w-icon dash__w-icon-style-3"><i class="fas-heart fas fa-heart"></i></div>
+
+                                                <div class="dash__w-text">0</div>
+                                                
+                                                <span class="dash__w-name">Wishlist</span>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--====== End - Dashboard Features ======-->
+                        </div>
+
+                        <!-- THÔNG TIN ĐƠN HÀNG -->
+                        <div class="col-lg-9 col-md-12">
+                            <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
+                                <div class="dash__pad-2">
+                                    <!-- TIÊU ĐỀ "ĐƠN HÀNG CỦA TÔI" -->
+                                    <h1 class="dash__h1 u-s-m-b-14 mb-3"><span>Đơn hàng</span> của tôi</h1>                                   
+
+                                    <form class="m-order u-s-m-b-30">
+                                        <div class="m-order__select-wrapper">
+
+                                            <label class="u-s-m-r-8 me-2" for="my-order-sort">Lọc:</label>
+                                            <select class="select-box select-box--primary-style border border-2 rounded-3 p-1" id="my-order-sort">
+                                                <option selected>5 Đơn gần nhất</option>
+                                                <option>15 Ngày gần nhất</option>
+                                                <option>30 Ngày gần nhất</option>
+                                                <option>6 Tháng gần nhất</option>
+                                                <option>Đơn hàng năm 2022</option>
+                                                <option>Tất cả Đơn hàng</option>
+                                            </select></div>
+                                    </form>
+                                    <div class="m-order__list mt-4">
+                                        <div id="m-order__list_1">
+                                            <div class="m-order__get">
+                                                <div class="container u-s-m-b-30">
+                                                    <div class="row dash-l-r">
+                                                        <div class="col-8">
+                                                            <div class="manage-o__text-2 u-c-secondary madon">Mã đơn DH15</div>
+                                                            <div class="manage-o__text infor">25-02-2024</div>
+                                                            <div>
+                
+                                                                <span class="manage-o__text-2 infor">Thành tiền:
+        
+                                                                    <span class="manage-o__text-2">90.000đ</span></span></div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="manage-o__description">
+                                                                <div class="description__info-wrap">
+                                                                    <div>
+                
+                                                                        <span class="manage-o__badge badge--processing">Đang xử lí</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="m-order__detail d-flex justify-content-center mb-4">
+                                                <div class="container mx-0 table-detail"  id="m-order__detail_1" style="display: none;">
+                                                    <div class="row ">
+                                                        <div class="col-12 detail_order">Chi tiết đơn hàng</div>
+                                                    </div>
+                                                    <div class="row ms-2">
+                                                        <div class="container detail_order_1">
+                                                            <div class="row infor_o">
+                                                                <div class="pe-0 col-3">Hủ tiếu nam vang</div>
+                                                                <div class="pe-0 col-1 quantity-dishes text-center">2</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">35.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">32.000</div>
+                                                            </div>
+                                                            <div class="row infor_o">
+                                                                <div class="pe-0 col-3">Cơm gà xé</div>
+                                                                <div class="pe-0 col-1 quantity-dishes text-center">1</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">30.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">26.000</div>
+                                                            </div>  
+                                                            <div class="row total_o">
+                                                                <div class="pe-0 col-3">Tổng cộng:</div>
+                                                                <div class="pe-0 col-1 quantity-total text-center">3</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">100.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">90.000</div>
+                                                            </div>
+                                                            <div class="row address_o">
+                                                                <div class="pe-0 col-12"><strong>Vị trí: </strong><span class="address_detail">Tòa nhà N1, Tầng 3, Phòng 302</span></div>
+                                                            </div>
+                                                        </div>                                                   
+                                                    </div>                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="m-order__list_2"> 
+                                            <div class="m-order__get">
+                                                <div class="container manage-o__header u-s-m-b-30">
+                                                    <div class="row dash-l-r">
+                                                        <div class="col-8">
+                                                            <div class="manage-o__text-2 u-c-secondary madon">Mã đơn DH02</div>
+                                                            <div class="manage-o__text infor">25-11-2023</div>
+                                                            <div>
+                
+                                                                <span class="manage-o__text-2 infor">Thành tiền:
+        
+                                                                    <span class="manage-o__text-2">124.000đ</span></span></div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="manage-o__description">
+                                                                <div class="description__info-wrap">
+                                                                    <div>
+                                                                        <span class="manage-o__badge badge--shipped">Đã giao</span></div>                                         
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="m-order__detail d-flex justify-content-center mb-4">
+                                                <div class="container mx-0 table-detail"  id="m-order__detail_2" style="display: none;">
+                                                    <div class="row ">
+                                                        <div class="col-12 detail_order">Chi tiết đơn hàng</div>
+                                                    </div>
+                                                    <div class="row ms-2">
+                                                        <div class="container detail_order_1">
+                                                            <div class="row infor_o">
+                                                                <div class="pe-0 col-3">Bún riêu cua</div>
+                                                                <div class="pe-0 col-1 quantity-dishes text-center">2</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">35.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">31.000</div>
+                                                            </div>
+                                                            <div class="row infor_o">
+                                                                <div class="pe-0 col-3">Phở tái nam</div>
+                                                                <div class="pe-0 col-1 quantity-dishes text-center">1</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">40.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">35.000</div>
+                                                            </div>  
+                                                            <div class="row infor_o">
+                                                                <div class="pe-0 col-3">Miến xào thập cẩm</div>
+                                                                <div class="pe-0 col-1 quantity-dishes text-center">1</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">30.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">27.000</div>
+                                                            </div>
+                                                            <div class="row total_o">
+                                                                <div class="pe-0 col-3">Tổng cộng:</div>
+                                                                <div class="pe-0 col-1 quantity-total text-center">4</div>
+                                                                <div class="pe-0 col-3 before-discount text-decoration-line-through text-center">140.000</div>
+                                                                <div class="pe-0 col-3 after-discount__price text-center">124.000</div>
+                                                            </div>
+                                                            <div class="row address_o">
+                                                                <div class="pe-0 col-12"><strong>Vị trí: </strong><span class="address_detail">Tòa nhà N2, Tầng 3, Phòng 307</span></div>
+                                                            </div>
+                                                        </div>                                                   
+                                                    </div>                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <script src="js/qldonhang.js"></script>
+
+    
+</body>
+</html>

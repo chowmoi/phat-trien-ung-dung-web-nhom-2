@@ -1,0 +1,29 @@
+
+.faq h1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 16px; }
+  
+  .faq > p {
+    font-size: 13px;
+    margin-bottom: 16px; }
+  
+  .f-a-q {
+    background-color: #f8f9fa;
+    padding: 20px; }
+    .f-a-q > a {
+      display: block;
+      font-weight: 600;
+      font-size: 14px; }
+    .f-a-q > div > p {
+      font-size: 13px;
+      margin: 20px 0; }
+
+
+      .title{
+        font-size: 33px;
+        color:var(--orange);
+        font-weight: bold;
+        text-align: center;
+        
+    }
