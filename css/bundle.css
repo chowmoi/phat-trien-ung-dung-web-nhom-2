@@ -1797,8 +1797,13 @@ body {
   position: relative;
   overflow: hidden; }
   .form-searchbox .text-field {
+    background-color: #f00;
     padding: 0 0 0 15px;
-    border-color: #f26f33; }
+    border-color: #f26f33;
+    color: #fff; }
+  .form-searchbox .text-field::placeholder {
+    color: #fff;
+    opacity: 1; }
   .form-searchbox .select-hide {
     visibility: hidden; }
   .form-searchbox .select-box-position {
@@ -3128,5 +3133,4 @@ a.menu-item i {
   .item-counter {
     left: 90px;
     top: 8px; } }
-
 
