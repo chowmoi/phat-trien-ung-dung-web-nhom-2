@@ -1820,6 +1820,22 @@ body {
     padding: 0;
     transform: translate(0%,-50%); }
 
+.form-searchbox--purple {
+  border-radius: 999px; }
+  .form-searchbox--purple .text-field {
+    border-color: #9d00ff;
+    border-radius: 999px;
+    color: #757575;
+    font-family: "Open Sans", sans-serif; }
+    .form-searchbox--purple .text-field::placeholder {
+      color: #757575;
+      opacity: 1; }
+  .form-searchbox--purple .select-box-position .select-box {
+    border-left-color: #9d00ff; }
+  .form-searchbox--purple .button-primary,
+  .form-searchbox--purple .button-primary:hover {
+    background: #9d00ff; }
+
 /**
  * A dummy Select Menu at the end of the document which will help us to calculate
  * the value of correct width.
@@ -3112,6 +3128,5 @@ a.menu-item i {
   .item-counter {
     left: 90px;
     top: 8px; } }
-
 
 
